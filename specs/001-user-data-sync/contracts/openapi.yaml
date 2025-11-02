@@ -1,0 +1,204 @@
+openapi: 3.0.3
+info:
+  title: User Data Sync API
+  version: 0.1.0
+  description: API for user registration, login, and vocabulary progress synchronization.
+servers:
+  - url: http://localhost:8080/api
+paths:
+  /auth/register:
+    post:
+      summary: Register new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400': { description: Invalid input }
+        '409': { description: Username or email already exists }
+  /auth/login:
+    post:
+      summary: Login existing user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401': { description: Invalid credentials }
+  /auth/security-question:
+    post:
+      summary: Initiate password reset by providing username/email
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SecurityQuestionRequest'
+      responses:
+        '200':
+          description: Returns security question (masked) if user exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SecurityQuestionResponse'
+        '404': { description: User not found }
+  /auth/reset-password:
+    post:
+      summary: Reset password via security answer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResetPasswordRequest'
+      responses:
+        '200': { description: Password reset successful }
+        '400': { description: Validation error }
+        '401': { description: Invalid security answer }
+  /progress:
+    get:
+      summary: Get current user progress
+      security:
+        - simpleAuth: []
+      responses:
+        '200':
+          description: Current progress
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProgressResponse'
+        '401': { description: Unauthorized }
+    put:
+      summary: Replace entire progress JSON (batched update)
+      security:
+        - simpleAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProgressUpdateRequest'
+      responses:
+        '200': { description: Updated }
+        '400': { description: Validation error }
+        '401': { description: Unauthorized }
+  /progress/sync:
+    post:
+      summary: Submit incremental operations (optional future)
+      security:
+        - simpleAuth: []
+      requestBody:
+        required: false
+      responses:
+        '202': { description: Accepted (no-op placeholder) }
+components:
+  securitySchemes:
+    simpleAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: simple-token
+  schemas:
+    RegisterRequest:
+      type: object
+      required: [username, password, securityQuestion, securityAnswer]
+      properties:
+        username: { type: string, minLength: 3 }
+        email: { type: string, format: email }
+        password: { type: string, minLength: 8 }
+        securityQuestion: { type: string }
+        securityAnswer: { type: string, minLength: 1 }
+    LoginRequest:
+      type: object
+      required: [username, password]
+      properties:
+        username: { type: string }
+        password: { type: string }
+    AuthResponse:
+      type: object
+      properties:
+        token: { type: string }
+        user:
+          type: object
+          properties:
+            username: { type: string }
+            schemaVersion: { type: integer }
+            lastLoginAt: { type: string, format: date-time }
+        progress: { $ref: '#/components/schemas/ProgressJson' }
+    SecurityQuestionRequest:
+      type: object
+      required: [username]
+      properties:
+        username: { type: string }
+    SecurityQuestionResponse:
+      type: object
+      properties:
+        question: { type: string }
+    ResetPasswordRequest:
+      type: object
+      required: [username, securityAnswer, newPassword]
+      properties:
+        username: { type: string }
+        securityAnswer: { type: string }
+        newPassword: { type: string, minLength: 8 }
+    ProgressJson:
+      type: object
+      required: [masteredWords, familiarity, reviewQueue, stats, archived]
+      properties:
+        masteredWords:
+          type: array
+          items: { type: string }
+        familiarity:
+          type: object
+          additionalProperties: { type: integer, minimum: 0 }
+        reviewQueue:
+          type: array
+          items:
+            type: object
+            required: [word, nextReviewAt]
+            properties:
+              word: { type: string }
+              nextReviewAt: { type: integer, description: epoch millis }
+        stats:
+          type: object
+          required: [totalLearned, todayLearned, streakDays]
+          properties:
+            totalLearned: { type: integer, minimum: 0 }
+            todayLearned: { type: integer, minimum: 0 }
+            streakDays: { type: integer, minimum: 0 }
+        sessionPointer:
+          type: object
+          nullable: true
+          properties:
+            wordset: { type: string }
+            nextIndex: { type: integer, minimum: 0 }
+        archived:
+          type: array
+          items: { type: string }
+    ProgressResponse:
+      type: object
+      properties:
+        schemaVersion: { type: integer }
+        progress: { $ref: '#/components/schemas/ProgressJson' }
+        updatedAt: { type: string, format: date-time }
+    ProgressUpdateRequest:
+      type: object
+      required: [schemaVersion, progress]
+      properties:
+        schemaVersion: { type: integer }
+        progress: { $ref: '#/components/schemas/ProgressJson' }

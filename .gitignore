@@ -34,3 +34,25 @@ stats.html
 /blob-report/
 /playwright/.cache/
 playwright-report
+
+# Backend Java/Spring Boot
+backend/target/
+backend/build/
+backend/.gradle/
+backend/data/app.db
+backend/data/app.db-*
+backend/*.class
+backend/*.jar
+backend/*.log
+backend/.settings/
+backend/.classpath
+backend/.project
+backend/bin/
+
+# Deployment
+pids/
+*.pid
+logs/*.log
+logs/*.log.*
+nohup.out
+.pm2/

@@ -13,8 +13,10 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
+import { useChapterCompletion } from '@/hooks/useChapterCompletion'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
+import type { ChapterResult, WordOutcome } from '@/typings/progress'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
@@ -36,6 +38,7 @@ const App: React.FC = () => {
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+  const { onChapterComplete } = useChapterCompletion()
 
   useEffect(() => {
     // 检测用户设备
@@ -106,8 +109,32 @@ const App: React.FC = () => {
   useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
     if (state.isFinished && !state.isSavingRecord) {
+      console.log('[Typing] Chapter finished! isReviewMode:', isReviewMode)
       chapterLogUploader()
       saveChapterRecord(state)
+
+      // T014: Trigger cloud progress sync
+      if (!isReviewMode) {
+        const chapterResult: ChapterResult = {
+          wordsetId: `${currentDictId}-${state.chapterData.index}`,
+          words: state.chapterData.userInputLogs.map((log): WordOutcome => {
+            const word = state.chapterData.words[log.index]
+            return {
+              word: word.name,
+              correct: log.correctCount,
+              errors: log.wrongCount,
+            }
+          }),
+          nextPointer: {
+            wordsetId: `${currentDictId}-${state.chapterData.index + 1}`,
+            nextIndex: 0,
+          },
+        }
+        console.log('[Typing] Calling onChapterComplete with:', chapterResult)
+        onChapterComplete(chapterResult)
+      } else {
+        console.log('[Typing] Skipping sync (review mode)')
+      }
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -50,5 +50,13 @@ export default defineConfig(async ({ mode }) => {
         localsConvention: 'camelCaseOnly',
       },
     },
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:8080',
+          changeOrigin: true,
+        },
+      },
+    },
   }
 })

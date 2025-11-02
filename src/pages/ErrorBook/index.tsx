@@ -7,6 +7,7 @@ import RowDetail from './RowDetail'
 import { currentRowDetailAtom } from './store'
 import type { groupedWordRecords } from './type'
 import { db, useDeleteWordRecord } from '@/utils/db'
+import { getErrorWordRecords } from '@/utils/db/cloudAdapter'
 import type { WordRecord } from '@/utils/db/record'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtomValue } from 'jotai'
@@ -62,31 +63,55 @@ export function ErrorBook() {
   }, [currentPage, sortedRecords])
 
   useEffect(() => {
-    db.wordRecords
-      .where('wrongCount')
-      .above(0)
-      .toArray()
-      .then((records) => {
-        const groups: groupedWordRecords[] = []
+    // Try to load error records from cloud first, fallback to IndexedDB
+    const loadErrorRecords = async () => {
+      try {
+        // Try cloud first
+        const cloudRecords = await getErrorWordRecords()
 
-        records.forEach((record) => {
-          let group = groups.find((g) => g.word === record.word && g.dict === record.dict)
-          if (!group) {
-            group = { word: record.word, dict: record.dict, records: [], wrongCount: 0 }
-            groups.push(group)
-          }
-          group.records.push(record as WordRecord)
-        })
+        if (cloudRecords && cloudRecords.length > 0) {
+          console.log('[ErrorBook] Loaded', cloudRecords.length, 'records from cloud')
+          processRecords(cloudRecords)
+          return
+        }
 
-        groups.forEach((group) => {
-          group.wrongCount = group.records.reduce((acc, cur) => {
-            acc += cur.wrongCount
-            return acc
-          }, 0)
-        })
+        // Fallback to IndexedDB if cloud returns empty or fails
+        console.log('[ErrorBook] No cloud records, falling back to IndexedDB')
+        const localRecords = await db.wordRecords.where('wrongCount').above(0).toArray()
 
-        setGroupedRecords(groups)
+        console.log('[ErrorBook] Loaded', localRecords.length, 'records from IndexedDB')
+        processRecords(localRecords)
+      } catch (error) {
+        console.error('[ErrorBook] Failed to load from cloud, using IndexedDB:', error)
+        // Fallback to IndexedDB on error
+        const localRecords = await db.wordRecords.where('wrongCount').above(0).toArray()
+        processRecords(localRecords)
+      }
+    }
+
+    const processRecords = (records: any[]) => {
+      const groups: groupedWordRecords[] = []
+
+      records.forEach((record) => {
+        let group = groups.find((g) => g.word === record.word && g.dict === record.dict)
+        if (!group) {
+          group = { word: record.word, dict: record.dict, records: [], wrongCount: 0 }
+          groups.push(group)
+        }
+        group.records.push(record as WordRecord)
       })
+
+      groups.forEach((group) => {
+        group.wrongCount = group.records.reduce((acc, cur) => {
+          acc += cur.wrongCount
+          return acc
+        }, 0)
+      })
+
+      setGroupedRecords(groups)
+    }
+
+    loadErrorRecords()
   }, [reload])
 
   const handleDelete = async (word: string, dict: string) => {

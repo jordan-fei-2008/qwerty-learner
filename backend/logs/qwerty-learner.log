@@ -1,0 +1,918 @@
+2025-11-02T00:00:57.059+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m58s21ms).
+2025-11-02T00:03:34.940+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s862ms).
+2025-11-02T00:07:44.020+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s80ms).
+2025-11-02T00:17:32.732+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m14s528ms).
+2025-11-02T00:24:57.094+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m24s363ms).
+2025-11-02T00:32:01.484+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m34s386ms).
+2025-11-02T00:41:03.856+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m2s372ms).
+2025-11-02T00:44:40.242+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m6s377ms).
+2025-11-02T00:55:23.166+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m42s924ms).
+2025-11-02T01:08:28.732+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m5s567ms).
+2025-11-02T01:15:53.206+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m54s462ms).
+2025-11-02T01:31:48.145+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s939ms).
+2025-11-02T01:36:33.186+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s30ms).
+2025-11-02T01:48:48.643+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m45s444ms).
+2025-11-02T02:00:54.393+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m5s750ms).
+2025-11-02T02:14:50.050+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m25s649ms).
+2025-11-02T02:25:05.355+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m15s305ms).
+2025-11-02T02:31:39.683+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m4s315ms).
+2025-11-02T02:40:54.312+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m14s629ms).
+2025-11-02T02:51:09.190+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s862ms).
+2025-11-02T03:00:43.947+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m4s757ms).
+2025-11-02T03:10:08.930+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m24s983ms).
+2025-11-02T03:17:13.373+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m34s432ms).
+2025-11-02T03:28:48.828+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m35s454ms).
+2025-11-02T03:39:23.762+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m4s925ms).
+2025-11-02T03:51:29.439+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m5s677ms).
+2025-11-02T03:57:23.582+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m24s134ms).
+2025-11-02T04:00:59.801+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m6s207ms).
+2025-11-02T04:04:32.869+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m33s69ms).
+2025-11-02T04:06:56.371+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s492ms).
+2025-11-02T04:09:29.936+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s565ms).
+2025-11-02T04:12:47.291+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m47s344ms).
+2025-11-02T04:15:31.044+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m43s754ms).
+2025-11-02T04:19:04.715+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m3s660ms).
+2025-11-02T04:21:38.423+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s708ms).
+2025-11-02T04:25:12.307+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m3s737ms).
+2025-11-02T04:28:26.144+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m43s826ms).
+2025-11-02T04:31:42.447+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s303ms).
+2025-11-02T04:35:06.171+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s714ms).
+2025-11-02T04:37:29.915+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s744ms).
+2025-11-02T04:40:53.658+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s726ms).
+2025-11-02T04:43:07.290+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s631ms).
+2025-11-02T04:46:10.898+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s598ms).
+2025-11-02T04:48:54.514+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s611ms).
+2025-11-02T04:51:08.068+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s554ms).
+2025-11-02T04:53:41.582+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s503ms).
+2025-11-02T04:55:35.066+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s483ms).
+2025-11-02T04:58:28.802+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s719ms).
+2025-11-02T05:00:32.405+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s604ms).
+2025-11-02T05:01:48.447+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s29ms).
+2025-11-02T05:05:49.670+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m31s215ms).
+2025-11-02T05:18:18.104+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m28s434ms).
+2025-11-02T05:22:28.388+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m40s279ms).
+2025-11-02T05:29:37.395+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m9s8ms).
+2025-11-02T05:37:21.972+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m14s566ms).
+2025-11-02T05:46:26.978+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m5s6ms).
+2025-11-02T05:51:00.955+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m3s971ms).
+2025-11-02T05:59:28.129+08:00  WARN 74415 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m57s166ms).
+2025-11-02T06:21:24.415+08:00  INFO 74415 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-02T06:21:24.418+08:00  INFO 74415 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-02T06:21:50.292+08:00  INFO 12433 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 12433 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T06:21:50.293+08:00  INFO 12433 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T06:21:50.749+08:00  INFO 12433 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T06:21:50.749+08:00  INFO 12433 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T06:21:50.774+08:00  INFO 12433 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T06:21:50.816+08:00  INFO 12433 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T06:21:51.292+08:00  INFO 12433 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5f95f1e1
+2025-11-02T06:21:51.294+08:00  INFO 12433 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T06:21:51.485+08:00  INFO 12433 --- [main] com.qwerty.usersync.Application          : Started Application in 1.387 seconds (process running for 1.538)
+2025-11-02T06:22:18.504+08:00  INFO 12433 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T06:22:18.505+08:00  INFO 12433 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T06:22:18.505+08:00  INFO 12433 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-02T06:23:32.965+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T06:23:32.966+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T06:23:32.966+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T06:23:32.967+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T06:23:32.967+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T06:23:32.967+08:00  INFO 12433 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T06:28:14.520+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T06:28:14.527+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T06:28:14.528+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T06:28:14.529+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T06:28:14.530+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T06:28:14.530+08:00  INFO 12433 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T06:55:10.195+08:00  INFO 12433 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-02T06:55:10.197+08:00  INFO 12433 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-02T06:55:12.657+08:00  INFO 23385 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 23385 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T06:55:12.657+08:00  INFO 23385 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T06:55:13.069+08:00  INFO 23385 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T06:55:13.069+08:00  INFO 23385 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T06:55:13.093+08:00  INFO 23385 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T06:55:13.134+08:00  INFO 23385 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T06:55:13.690+08:00  INFO 23385 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6de6faa6
+2025-11-02T06:55:13.694+08:00  INFO 23385 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T06:55:13.891+08:00  INFO 23385 --- [main] com.qwerty.usersync.Application          : Started Application in 1.414 seconds (process running for 1.555)
+2025-11-02T06:55:47.085+08:00  INFO 23385 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T06:55:47.086+08:00  INFO 23385 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T06:55:47.086+08:00  INFO 23385 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-02T06:56:06.975+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T06:56:06.976+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T06:56:06.976+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T06:56:06.977+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T06:56:06.978+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T06:56:06.978+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T07:00:46.840+08:00  INFO 23385 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:00:46.843+08:00  INFO 23385 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:00:51.547+08:00  INFO 23385 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:00:51.547+08:00  INFO 23385 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:00:57.301+08:00  INFO 23385 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:00:57.303+08:00  INFO 23385 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:00:57.333+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T07:00:57.335+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T07:00:57.337+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T07:00:57.339+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T07:00:57.340+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T07:00:57.340+08:00  INFO 23385 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T07:01:42.175+08:00  INFO 23385 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730502102 - 1762038102
+2025-11-02T07:01:42.177+08:00  INFO 23385 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 3 records
+2025-11-02T07:01:42.183+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730502102 - 1762038102
+2025-11-02T07:01:42.184+08:00  INFO 23385 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 3 records
+2025-11-02T07:09:37.252+08:00  INFO 23385 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-02T07:09:37.255+08:00  INFO 23385 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-02T07:09:39.477+08:00  INFO 28811 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 28811 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T07:09:39.478+08:00  INFO 28811 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T07:09:39.893+08:00  INFO 28811 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T07:09:39.893+08:00  INFO 28811 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T07:09:39.916+08:00  INFO 28811 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T07:09:39.956+08:00  INFO 28811 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T07:09:40.714+08:00  INFO 28811 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1cdc1bbc
+2025-11-02T07:09:40.718+08:00  INFO 28811 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T07:09:40.964+08:00  INFO 28811 --- [main] com.qwerty.usersync.Application          : Started Application in 1.666 seconds (process running for 1.797)
+2025-11-02T07:09:52.230+08:00  INFO 28811 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T07:09:52.230+08:00  INFO 28811 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T07:09:52.231+08:00  INFO 28811 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-02T07:10:20.516+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:10:20.519+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:10:23.158+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:10:23.159+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:10:27.035+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:10:27.036+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:10:27.063+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T07:10:27.063+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T07:10:27.064+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T07:10:27.064+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T07:10:27.064+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T07:10:27.064+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T07:10:45.392+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:10:45.393+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:10:45.400+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:10:45.401+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:11:07.436+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:11:07.437+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:11:07.446+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:11:07.447+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:11:12.565+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730502672 - 1762038672
+2025-11-02T07:11:12.566+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 6 records
+2025-11-02T07:11:12.572+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730502672 - 1762038672
+2025-11-02T07:11:12.573+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 6 records
+2025-11-02T07:11:15.496+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:11:15.500+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:11:15.508+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:11:15.508+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 6 records
+2025-11-02T07:11:32.652+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:32.652+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:34.990+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:34.991+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:37.004+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:37.005+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:37.025+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T07:11:37.026+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T07:11:37.027+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T07:11:37.027+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T07:11:37.027+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T07:11:37.027+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T07:11:42.033+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:42.035+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:45.481+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:45.482+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:50.535+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:11:50.536+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:11:50.553+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T07:11:50.555+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T07:11:50.555+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T07:11:50.555+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T07:11:50.555+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T07:11:50.555+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T07:51:26.968+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:51:26.968+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T07:51:26.971+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 12 records
+2025-11-02T07:51:26.971+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 12 records
+2025-11-02T07:51:37.015+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730505096 - 1762041096
+2025-11-02T07:51:37.015+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730505096 - 1762041096
+2025-11-02T07:51:37.017+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 12 records
+2025-11-02T07:51:37.017+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 12 records
+2025-11-02T07:51:43.573+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:51:43.574+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:51:46.921+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:51:46.921+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:51:50.591+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:51:50.591+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:51:57.539+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:51:57.540+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:52:00.393+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:52:00.393+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:52:04.299+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:52:04.301+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:52:23.378+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:52:23.381+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:52:31.914+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:52:31.915+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T07:52:36.761+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T07:52:36.762+08:00  INFO 28811 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T08:59:17.553+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T08:59:17.555+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T08:59:22.527+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T08:59:22.527+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T08:59:29.652+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T08:59:29.653+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T08:59:39.504+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T08:59:39.505+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T08:59:45.940+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T08:59:45.940+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T08:59:45.941+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 25 records
+2025-11-02T08:59:45.943+08:00  INFO 28811 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 25 records
+2025-11-02T09:00:03.369+08:00  INFO 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: pollution, dict: cet4
+2025-11-02T09:00:03.390+08:00 ERROR 28811 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Failed to delete word records
+
+org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO user_progress (user_id, schema_version, progress_json, updated_at) VALUES (?, ?, ?, ?)]; SQL state [null]; error code [19]; [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: user_progress.user_id)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1549) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:970) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1014) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1024) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.repository.UserProgressRepository.save(UserProgressRepository.java:44) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.repository.UserProgressRepository$$SpringCGLIB$$0.save(<generated>) ~[main/:na]
+	at com.qwerty.usersync.service.ProgressService.deleteWordRecords(ProgressService.java:508) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.service.ProgressService$$SpringCGLIB$$0.deleteWordRecords(<generated>) ~[main/:na]
+	at com.qwerty.usersync.controller.ProgressController.deleteWordRecords(ProgressController.java:288) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: user_progress.user_id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.newSQLException(DB.java:1190) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.execute(DB.java:985) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:122) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:459) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:121) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:102) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:975) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	... 78 common frames omitted
+
+2025-11-02T09:00:03.394+08:00 ERROR 28811 --- [http-nio-8080-exec-5] c.q.u.controller.ProgressController      : Failed to delete word records
+
+java.lang.RuntimeException: Failed to delete word records
+	at com.qwerty.usersync.service.ProgressService.deleteWordRecords(ProgressService.java:518) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.service.ProgressService$$SpringCGLIB$$0.deleteWordRecords(<generated>) ~[main/:na]
+	at com.qwerty.usersync.controller.ProgressController.deleteWordRecords(ProgressController.java:288) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO user_progress (user_id, schema_version, progress_json, updated_at) VALUES (?, ?, ?, ?)]; SQL state [null]; error code [19]; [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: user_progress.user_id)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1549) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:970) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1014) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1024) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.repository.UserProgressRepository.save(UserProgressRepository.java:44) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.qwerty.usersync.repository.UserProgressRepository$$SpringCGLIB$$0.save(<generated>) ~[main/:na]
+	at com.qwerty.usersync.service.ProgressService.deleteWordRecords(ProgressService.java:508) ~[main/:na]
+	... 62 common frames omitted
+Caused by: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: user_progress.user_id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.newSQLException(DB.java:1190) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.execute(DB.java:985) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:122) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:459) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:121) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:102) ~[sqlite-jdbc-3.44.1.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:975) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.1.jar:6.1.1]
+	... 78 common frames omitted
+
+2025-11-02T09:00:03.426+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:00:03.427+08:00  INFO 28811 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 25 records
+2025-11-02T09:02:08.392+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:02:08.394+08:00  INFO 28811 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:02:15.691+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:02:15.693+08:00  INFO 28811 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:02:18.210+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:02:18.211+08:00  INFO 28811 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:02:18.229+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T09:02:18.230+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T09:02:18.230+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T09:02:18.231+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T09:02:18.231+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T09:02:18.231+08:00  INFO 28811 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T09:02:29.472+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:02:29.474+08:00  INFO 28811 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 28 records
+2025-11-02T09:02:29.480+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:02:29.481+08:00  INFO 28811 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 28 records
+2025-11-02T09:07:46.237+08:00  INFO 28811 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-02T09:07:46.248+08:00  INFO 28811 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-02T09:07:48.289+08:00  INFO 66488 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 66488 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T09:07:48.290+08:00  INFO 66488 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T09:07:48.707+08:00  INFO 66488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T09:07:48.707+08:00  INFO 66488 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T09:07:48.730+08:00  INFO 66488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T09:07:48.768+08:00  INFO 66488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T09:07:49.014+08:00  INFO 66488 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@630b6190
+2025-11-02T09:07:49.019+08:00  INFO 66488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T09:07:49.206+08:00  INFO 66488 --- [main] com.qwerty.usersync.Application          : Started Application in 1.093 seconds (process running for 1.232)
+2025-11-02T09:08:08.388+08:00  INFO 66488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T09:08:08.388+08:00  INFO 66488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T09:08:08.389+08:00  INFO 66488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-02T09:08:08.710+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:08.712+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 28 records
+2025-11-02T09:08:08.726+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:08.727+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 28 records
+2025-11-02T09:08:16.855+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: kettle, dict: cet4
+2025-11-02T09:08:16.855+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 28 total word records
+2025-11-02T09:08:16.858+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 4 records
+2025-11-02T09:08:16.870+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:16.870+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 24 records
+2025-11-02T09:08:28.128+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:28.128+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 24 records
+2025-11-02T09:08:28.132+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:28.133+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 24 records
+2025-11-02T09:08:33.757+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509713 - 1762045713
+2025-11-02T09:08:33.758+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 24 records
+2025-11-02T09:08:33.764+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509713 - 1762045713
+2025-11-02T09:08:33.764+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 24 records
+2025-11-02T09:08:41.370+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:08:41.372+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:08:49.471+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:49.472+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 25 records
+2025-11-02T09:08:49.498+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:08:49.498+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 25 records
+2025-11-02T09:09:04.168+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:04.169+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:06.808+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:06.810+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:11.006+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:11.007+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:11.037+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T09:09:11.037+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T09:09:11.038+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T09:09:11.038+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T09:09:11.038+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T09:09:11.038+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T09:09:15.365+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:15.366+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:17.268+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:17.269+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:22.540+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:09:22.541+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:09:22.558+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T09:09:22.559+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T09:09:22.559+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T09:09:22.559+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T09:09:22.560+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T09:09:22.560+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T09:09:27.040+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:09:27.041+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:09:27.052+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:09:27.052+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:09:40.211+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:09:40.211+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:09:40.232+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:09:40.233+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:10:23.301+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:10:23.301+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:10:23.303+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:10:23.303+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:10:40.823+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:10:40.824+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:10:42.293+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:10:42.294+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:10:44.825+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:10:44.826+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:10:44.844+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T09:10:44.844+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T09:10:44.844+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T09:10:44.845+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T09:10:44.845+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T09:10:44.845+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T09:11:02.121+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:11:02.123+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:11:02.132+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:11:02.133+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:11:11.906+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509871 - 1762045871
+2025-11-02T09:11:11.908+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 34 records
+2025-11-02T09:11:11.916+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509871 - 1762045871
+2025-11-02T09:11:11.916+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 34 records
+2025-11-02T09:11:12.049+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509872 - 1762045872
+2025-11-02T09:11:12.052+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 34 records
+2025-11-02T09:11:23.084+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509883 - 1762045883
+2025-11-02T09:11:23.084+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 34 records
+2025-11-02T09:11:23.090+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730509883 - 1762045883
+2025-11-02T09:11:23.090+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 34 records
+2025-11-02T09:11:50.117+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:11:50.118+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:11:50.127+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:11:50.128+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:12:00.521+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: drunk, dict: cet4
+2025-11-02T09:12:00.523+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 34 total word records
+2025-11-02T09:12:00.523+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 3 records
+2025-11-02T09:12:00.537+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:12:00.537+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:12:12.139+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:12:12.139+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:12:12.149+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:12:12.149+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:17:03.261+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:17:03.264+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:17:03.272+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:17:03.272+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:19:05.761+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:19:05.762+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:19:05.777+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:19:05.777+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 31 records
+2025-11-02T09:19:13.796+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:19:13.797+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:19:15.529+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:19:15.530+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:19:18.079+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:19:18.084+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:19:18.105+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T09:19:18.106+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T09:19:18.106+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T09:19:18.106+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T09:19:18.106+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T09:19:18.106+08:00  INFO 66488 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T09:19:35.489+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:19:35.489+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:19:35.491+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:19:35.492+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:22:48.613+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:22:48.613+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:22:48.614+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:22:48.614+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:23:44.530+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:23:44.530+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:23:44.531+08:00  INFO 66488 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:23:44.531+08:00  INFO 66488 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:32:00.024+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:32:00.024+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:32:00.026+08:00  INFO 66488 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:32:00.026+08:00  INFO 66488 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:32:06.456+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:32:06.456+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T09:32:06.457+08:00  INFO 66488 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:32:06.457+08:00  INFO 66488 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 34 records
+2025-11-02T09:32:21.045+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:32:21.047+08:00  INFO 66488 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:32:23.883+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:32:23.884+08:00  INFO 66488 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:32:26.782+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T09:32:26.784+08:00  INFO 66488 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T09:46:31.917+08:00  INFO 66488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-02T09:46:31.919+08:00  INFO 66488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-02T09:47:46.156+08:00  INFO 79554 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 79554 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T09:47:46.157+08:00  INFO 79554 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T09:47:46.622+08:00  INFO 79554 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T09:47:46.622+08:00  INFO 79554 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T09:47:46.647+08:00  INFO 79554 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T09:47:46.692+08:00  INFO 79554 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T09:47:46.926+08:00  INFO 79554 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4317850d
+2025-11-02T09:47:46.927+08:00  INFO 79554 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T09:47:47.130+08:00  INFO 79554 --- [main] com.qwerty.usersync.Application          : Started Application in 1.172 seconds (process running for 1.323)
+2025-11-02T09:57:21.341+08:00  INFO 86964 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 86964 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T09:57:21.342+08:00  INFO 86964 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T09:57:21.809+08:00  INFO 86964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T09:57:21.810+08:00  INFO 86964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T09:57:21.837+08:00  INFO 86964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T09:57:21.885+08:00  INFO 86964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T09:57:22.196+08:00  INFO 86964 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@43c87306
+2025-11-02T09:57:22.196+08:00  INFO 86964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T09:57:22.415+08:00  INFO 86964 --- [main] com.qwerty.usersync.Application          : Started Application in 1.272 seconds (process running for 1.427)
+2025-11-02T09:59:42.760+08:00  INFO 88701 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 88701 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T09:59:42.761+08:00  INFO 88701 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T09:59:43.213+08:00  INFO 88701 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T09:59:43.213+08:00  INFO 88701 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T09:59:43.237+08:00  INFO 88701 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T09:59:43.281+08:00  INFO 88701 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T09:59:43.526+08:00  INFO 88701 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6d0b0da6
+2025-11-02T09:59:43.527+08:00  INFO 88701 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T09:59:43.728+08:00  INFO 88701 --- [main] com.qwerty.usersync.Application          : Started Application in 1.167 seconds (process running for 1.314)
+2025-11-02T09:59:53.407+08:00  INFO 88701 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T09:59:53.408+08:00  INFO 88701 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T09:59:53.408+08:00  INFO 88701 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-02T10:00:03.836+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:03.840+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:06.849+08:00  INFO 88701 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:06.865+08:00  INFO 88701 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:09.422+08:00  INFO 88701 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:09.426+08:00  INFO 88701 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:12.048+08:00  INFO 88701 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:12.049+08:00  INFO 88701 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:14.575+08:00  INFO 88701 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:14.576+08:00  INFO 88701 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:32.696+08:00  INFO 88701 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:32.698+08:00  INFO 88701 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:38.879+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:38.880+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:47.667+08:00  INFO 88701 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:47.668+08:00  INFO 88701 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:52.993+08:00  INFO 88701 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:52.995+08:00  INFO 88701 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:55.609+08:00  INFO 88701 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:00:55.611+08:00  INFO 88701 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:00:55.635+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T10:00:55.635+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T10:00:55.636+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T10:00:55.636+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T10:00:55.636+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T10:00:55.637+08:00  INFO 88701 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T10:01:04.770+08:00  INFO 88701 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:01:04.771+08:00  INFO 88701 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:01:08.566+08:00  INFO 88701 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:01:08.567+08:00  INFO 88701 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:01:15.054+08:00  INFO 88701 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:01:15.055+08:00  INFO 88701 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:01:18.431+08:00  INFO 88701 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:01:18.433+08:00  INFO 88701 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:01:23.595+08:00  INFO 88701 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T10:01:23.596+08:00  INFO 88701 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T10:01:23.609+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T10:01:23.610+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T10:01:23.610+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T10:01:23.610+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T10:01:23.610+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T10:01:23.610+08:00  INFO 88701 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T10:01:26.395+08:00  INFO 88701 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T10:01:26.396+08:00  INFO 88701 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 52 records
+2025-11-02T11:21:47.369+08:00  INFO 15324 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 15324 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T11:21:47.370+08:00  INFO 15324 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T11:21:47.862+08:00  INFO 15324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T11:21:47.863+08:00  INFO 15324 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T11:21:47.911+08:00  INFO 15324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T11:21:47.959+08:00  INFO 15324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T11:21:48.258+08:00  INFO 15324 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@14998e21
+2025-11-02T11:21:48.259+08:00  INFO 15324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T11:21:48.474+08:00  INFO 15324 --- [main] com.qwerty.usersync.Application          : Started Application in 1.309 seconds (process running for 1.473)
+2025-11-02T11:23:49.804+08:00  INFO 15324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T11:23:49.805+08:00  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T11:23:49.807+08:00  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-02T11:24:02.047+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:02.052+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:04.279+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:04.280+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:07.296+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:07.302+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:07.338+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T11:24:07.338+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T11:24:07.339+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T11:24:07.340+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T11:24:07.340+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T11:24:07.340+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T11:24:16.557+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:16.558+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:24.380+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:24.382+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:29.209+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:29.211+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:43.320+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:43.322+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:46.149+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:46.151+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:51.901+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:24:51.903+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:24:51.926+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T11:24:51.929+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T11:24:51.930+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T11:24:51.930+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T11:24:51.931+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T11:24:51.931+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T11:25:06.050+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:25:06.052+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 61 records
+2025-11-02T11:25:25.959+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730517925 - 1762053925
+2025-11-02T11:25:25.960+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 61 records
+2025-11-02T11:25:51.432+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:25:51.434+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 61 records
+2025-11-02T11:26:00.413+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730517960 - 1762053960
+2025-11-02T11:26:00.414+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 61 records
+2025-11-02T11:26:06.676+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730517966 - 1762053966
+2025-11-02T11:26:06.679+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 61 records
+2025-11-02T11:26:25.592+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [GetWordRecords] START - userId: 1, range: 1730517985 - 1762053985
+2025-11-02T11:26:25.593+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [GetWordRecords] END - Returning 61 records
+2025-11-02T11:27:06.882+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:06.886+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 61 records
+2025-11-02T11:27:11.781+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: analyse, dict: cet4
+2025-11-02T11:27:11.782+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 61 total word records
+2025-11-02T11:27:11.782+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 4 records
+2025-11-02T11:27:11.795+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:11.795+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 57 records
+2025-11-02T11:27:15.471+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: explosive, dict: cet4
+2025-11-02T11:27:15.473+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 57 total word records
+2025-11-02T11:27:15.473+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 8 records
+2025-11-02T11:27:15.490+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:15.492+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 49 records
+2025-11-02T11:27:16.078+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: pretend, dict: cet4
+2025-11-02T11:27:16.079+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 49 total word records
+2025-11-02T11:27:16.080+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 6 records
+2025-11-02T11:27:16.094+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:16.097+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 43 records
+2025-11-02T11:27:16.730+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: numerous, dict: cet4
+2025-11-02T11:27:16.732+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 43 total word records
+2025-11-02T11:27:16.733+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 6 records
+2025-11-02T11:27:16.752+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:16.757+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 37 records
+2025-11-02T11:27:17.846+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: calculate, dict: cet4
+2025-11-02T11:27:17.848+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 37 total word records
+2025-11-02T11:27:17.848+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 5 records
+2025-11-02T11:27:17.864+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:17.864+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 32 records
+2025-11-02T11:27:18.586+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: pollution, dict: cet4
+2025-11-02T11:27:18.589+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 32 total word records
+2025-11-02T11:27:18.589+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 6 records
+2025-11-02T11:27:18.601+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:18.602+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 26 records
+2025-11-02T11:27:19.387+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: discourage, dict: cet4
+2025-11-02T11:27:19.388+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 26 total word records
+2025-11-02T11:27:19.389+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 3 records
+2025-11-02T11:27:19.403+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:19.404+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 23 records
+2025-11-02T11:27:20.010+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: govern, dict: cet4
+2025-11-02T11:27:20.013+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 23 total word records
+2025-11-02T11:27:20.013+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 5 records
+2025-11-02T11:27:20.031+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:20.033+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 18 records
+2025-11-02T11:27:21.962+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: wreck, dict: cet4
+2025-11-02T11:27:21.963+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 18 total word records
+2025-11-02T11:27:21.964+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] SUCCESS - Deleted 5 records
+2025-11-02T11:27:21.976+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:21.977+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:29.465+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: competent, dict: cet4
+2025-11-02T11:27:29.466+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:29.466+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:29.484+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:29.486+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:30.874+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: require, dict: cet4
+2025-11-02T11:27:30.876+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:30.876+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:30.889+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:30.891+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:31.332+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: salary, dict: cet4
+2025-11-02T11:27:31.332+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:31.332+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:31.343+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:31.343+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:31.505+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: sake, dict: cet4
+2025-11-02T11:27:31.506+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:31.506+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:31.517+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:31.519+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:31.691+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: conceal, dict: cet4
+2025-11-02T11:27:31.693+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:31.694+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:31.705+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:31.706+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:31.859+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: neutral, dict: cet4
+2025-11-02T11:27:31.861+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:31.861+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:31.873+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:31.874+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.047+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: circular, dict: cet4
+2025-11-02T11:27:32.048+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.048+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.060+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.061+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.205+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: analysis, dict: cet4
+2025-11-02T11:27:32.206+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.206+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.216+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.216+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.385+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: object, dict: cet4
+2025-11-02T11:27:32.386+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.386+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.397+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.398+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.560+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: possess, dict: cet4
+2025-11-02T11:27:32.561+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.561+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.570+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.571+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.742+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: journalist, dict: cet4
+2025-11-02T11:27:32.743+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.744+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.753+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.754+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:32.933+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: optional, dict: cet4
+2025-11-02T11:27:32.934+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:32.934+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:32.944+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:32.945+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:33.113+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: sideways, dict: cet4
+2025-11-02T11:27:33.114+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:33.114+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:33.125+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:33.125+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:33.308+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: investment, dict: cet4
+2025-11-02T11:27:33.310+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:33.310+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:33.321+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:33.322+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:33.484+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: devise, dict: cet4
+2025-11-02T11:27:33.485+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:33.486+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:33.497+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:33.498+08:00  INFO 15324 --- [http-nio-8080-exec-10] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:33.674+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: exposure, dict: cet4
+2025-11-02T11:27:33.676+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:33.676+08:00  INFO 15324 --- [http-nio-8080-exec-1] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:33.686+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:33.687+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:33.855+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: protective, dict: cet4
+2025-11-02T11:27:33.856+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:33.856+08:00  INFO 15324 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:33.865+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:33.866+08:00  INFO 15324 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:34.048+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: multicultural, dict: cet4
+2025-11-02T11:27:34.049+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:34.049+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:34.058+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:34.060+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:34.257+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] START - userId: 1, word: scratch, dict: cet4
+2025-11-02T11:27:34.257+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] Found 13 total word records
+2025-11-02T11:27:34.258+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [DeleteWordRecords] No matching records found to delete
+2025-11-02T11:27:34.267+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:34.267+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:27:37.255+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:27:37.256+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:28:01.582+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:28:01.584+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 13 records
+2025-11-02T11:29:03.474+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:29:03.475+08:00  INFO 15324 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:29:08.026+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:29:08.027+08:00  INFO 15324 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:29:10.444+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:29:10.445+08:00  INFO 15324 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:29:10.463+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T11:29:10.464+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T11:29:10.465+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T11:29:10.465+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T11:29:10.465+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T11:29:10.465+08:00  INFO 15324 --- [http-nio-8080-exec-8] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response
+2025-11-02T11:29:13.500+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:29:13.501+08:00  INFO 15324 --- [http-nio-8080-exec-9] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 16 records
+2025-11-02T11:29:57.495+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:29:57.497+08:00  INFO 15324 --- [http-nio-8080-exec-2] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 16 records
+2025-11-02T11:54:09.394+08:00  INFO 29907 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.5 with PID 29907 (/Users/feiy10/work/research/ideas/qwerty-learner/backend/build/classes/java/main started by feiy10 in /Users/feiy10/work/research/ideas/qwerty-learner/backend)
+2025-11-02T11:54:09.395+08:00  INFO 29907 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-02T11:54:09.830+08:00  INFO 29907 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-02T11:54:09.830+08:00  INFO 29907 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-02T11:54:09.853+08:00  INFO 29907 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-02T11:54:09.896+08:00  INFO 29907 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-02T11:54:10.203+08:00  INFO 29907 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@43c87306
+2025-11-02T11:54:10.203+08:00  INFO 29907 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-02T11:54:10.404+08:00  INFO 29907 --- [main] com.qwerty.usersync.Application          : Started Application in 1.2 seconds (process running for 1.35)
+2025-11-02T11:54:16.087+08:00  INFO 29907 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-02T11:54:16.087+08:00  INFO 29907 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-02T11:54:16.088+08:00  INFO 29907 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-02T11:54:22.152+08:00  INFO 29907 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] START - userId: 1
+2025-11-02T11:54:22.153+08:00  INFO 29907 --- [http-nio-8080-exec-3] c.q.usersync.service.ProgressService     : [GetAllWordRecords] END - Returning 16 records
+2025-11-02T11:54:28.763+08:00  INFO 29907 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:54:28.766+08:00  INFO 29907 --- [http-nio-8080-exec-4] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:54:30.294+08:00  INFO 29907 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:54:30.297+08:00  INFO 29907 --- [http-nio-8080-exec-5] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:54:32.482+08:00  INFO 29907 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] START - userId: 1
+2025-11-02T11:54:32.483+08:00  INFO 29907 --- [http-nio-8080-exec-6] c.q.usersync.service.ProgressService     : [AddWordRecord] END - Successfully added word record
+2025-11-02T11:54:32.506+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] START - userId: 1
+2025-11-02T11:54:32.506+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] Found existing progress for user 1
+2025-11-02T11:54:32.507+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] Applied patch merges
+2025-11-02T11:54:32.507+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] Calling repository.update() for user 1
+2025-11-02T11:54:32.507+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] Database update completed successfully
+2025-11-02T11:54:32.507+08:00  INFO 29907 --- [http-nio-8080-exec-7] c.q.usersync.service.ProgressService     : [PatchProgress] END - returning response

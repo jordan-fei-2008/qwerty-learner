@@ -1,8 +1,13 @@
 import Loading from './components/Loading'
+import { ProtectedRoute } from './components/ProtectedRoute'
 import './index.css'
 import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
+import Login from './pages/Login'
 import MobilePage from './pages/Mobile'
+import ProgressTest from './pages/ProgressTest'
+import Register from './pages/Register'
+import ResetPassword from './pages/ResetPassword'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
 import { Analytics } from '@vercel/analytics/react'
@@ -56,11 +61,60 @@ function Root() {
               <Route path="/*" element={<Navigate to="/mobile" />} />
             ) : (
               <>
-                <Route index element={<TypingPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/analysis" element={<AnalysisPage />} />
-                <Route path="/error-book" element={<ErrorBook />} />
-                <Route path="/friend-links" element={<FriendLinks />} />
+                {/* Public routes - no authentication required */}
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/reset-password" element={<ResetPassword />} />
+
+                {/* Protected routes - authentication required */}
+                <Route
+                  index
+                  element={
+                    <ProtectedRoute>
+                      <TypingPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/progress-test"
+                  element={
+                    <ProtectedRoute>
+                      <ProgressTest />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/gallery"
+                  element={
+                    <ProtectedRoute>
+                      <GalleryPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/analysis"
+                  element={
+                    <ProtectedRoute>
+                      <AnalysisPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/error-book"
+                  element={
+                    <ProtectedRoute>
+                      <ErrorBook />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/friend-links"
+                  element={
+                    <ProtectedRoute>
+                      <FriendLinks />
+                    </ProtectedRoute>
+                  }
+                />
                 <Route path="/*" element={<Navigate to="/" />} />
               </>
             )}

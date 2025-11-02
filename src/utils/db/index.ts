@@ -1,3 +1,4 @@
+import { addWordRecord as saveWordRecordToCloud } from './cloudAdapter'
 import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -106,7 +107,15 @@ export function useSaveWordRecord() {
 
       let dbID = -1
       try {
+        // Save to local IndexedDB (for backward compatibility)
         dbID = await db.wordRecords.add(wordRecord)
+
+        // Also save to cloud
+        try {
+          await saveWordRecordToCloud(wordRecord)
+        } catch (cloudError) {
+          console.warn('[WordRecord] Failed to save to cloud, but local save succeeded:', cloudError)
+        }
       } catch (e) {
         console.error(e)
       }
@@ -124,10 +133,23 @@ export function useSaveWordRecord() {
 export function useDeleteWordRecord() {
   const deleteWordRecord = useCallback(async (word: string, dict: string) => {
     try {
+      // Delete from IndexedDB
       const deletedCount = await db.wordRecords.where({ word, dict }).delete()
+      console.log('[WordRecord] Deleted', deletedCount, 'records from IndexedDB')
+
+      // Try to delete from cloud as well (dual-write pattern)
+      try {
+        const { deleteWordRecords: deleteFromCloud } = await import('./cloudAdapter')
+        const cloudDeletedCount = await deleteFromCloud(word, dict)
+        console.log('[WordRecord] Deleted', cloudDeletedCount, 'records from cloud')
+      } catch (cloudError) {
+        console.warn('[WordRecord] Failed to delete from cloud, but local deletion succeeded:', cloudError)
+      }
+
       return deletedCount
     } catch (error) {
       console.error(`删除单词记录时出错：`, error)
+      return 0
     }
   }, [])
 
