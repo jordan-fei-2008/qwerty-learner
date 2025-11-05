@@ -56,3 +56,7 @@ logs/*.log
 logs/*.log.*
 nohup.out
 .pm2/
+
+# Build and package artifacts
+packages/
+build/
