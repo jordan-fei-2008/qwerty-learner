@@ -249,39 +249,212 @@ pm2 resurrect
 
 ---
 
-## 生产环境建议
+## 生产环境部署（重要！）
 
-### 1. 使用反向代理（Nginx）
+### ⚠️ 必须配置反向代理
+
+**问题：** 前端（5173）和后端（8080）运行在不同端口，前端无法直接访问后端 API 会导致 404 错误。
+
+**解决：** 使用 Nginx 作为统一入口，将 `/api` 请求路由到后端。
+
+### 方法 1：自动安装脚本（推荐）
+
+```bash
+# 1. 复制脚本到服务器
+scp setup-nginx.sh root@your-server:/tmp/
+
+# 2. 在服务器上运行
+ssh root@your-server
+cd /tmp
+sudo ./setup-nginx.sh
+```
+
+脚本会自动安装 Nginx、创建配置、测试并重载。
+
+### 方法 2：手动配置 Nginx
+
+#### 安装 Nginx
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get update && sudo apt-get install -y nginx
+```
+
+**CentOS/RHEL:**
+```bash
+sudo yum install -y nginx
+```
+
+#### 创建配置文件
+
+创建 `/etc/nginx/conf.d/qwerty-learner.conf`：
 
 ```nginx
 server {
     listen 80;
-    server_name your-domain.com;
-
-    # 前端静态文件
+    server_name your-domain.com;  # 或 IP 地址
+    
+    client_max_body_size 10M;
+    
+    # 前端
     location / {
         proxy_pass http://localhost:5173;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
     }
-
+    
     # 后端 API
     location /api {
         proxy_pass http://localhost:8080;
+        proxy_http_version 1.1;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        
+        proxy_connect_timeout 60s;
+        proxy_send_timeout 60s;
+        proxy_read_timeout 60s;
     }
 }
 ```
 
-### 2. 配置 HTTPS
+#### 重载 Nginx
 
 ```bash
-# 使用 Let's Encrypt 自动配置
-sudo certbot --nginx -d your-domain.com
+# 测试配置
+sudo nginx -t
+
+# 重载
+sudo systemctl reload nginx
+sudo systemctl enable nginx
 ```
 
-### 3. 监控和日志
+#### 开放防火墙端口
+
+**Ubuntu (ufw):**
+```bash
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
+
+**CentOS (firewalld):**
+```bash
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+```
+
+**云服务器：** 在安全组规则中开放 80 端口
+
+### 验证配置
+
+```bash
+# 访问前端（现在通过 80 端口，不再使用 5173）
+curl http://your-server/
+
+# 测试 API（关键：确保 /api 路由工作）
+curl http://your-server/api/health
+```
+
+**重要：** 配置 Nginx 后，用户应该访问 `http://your-server`（80端口），而不是 `http://your-server:5173`。
+
+---
+
+## 配置 HTTPS（可选但推荐）
+
+```bash
+# 安装 Certbot
+sudo apt-get install certbot python3-certbot-nginx  # Ubuntu/Debian
+sudo yum install certbot python3-certbot-nginx      # CentOS/RHEL
+
+# 自动配置 HTTPS
+sudo certbot --nginx -d your-domain.com
+
+# 自动续期
+sudo certbot renew --dry-run
+```
+
+---
+
+## 使用 systemd 管理服务（推荐）
+
+比启动脚本更可靠，支持自动重启、开机自启。
+
+### 后端 Service
+
+创建 `/etc/systemd/system/qwerty-backend.service`：
+
+```ini
+[Unit]
+Description=Qwerty Learner Backend
+After=network.target
+
+[Service]
+Type=simple
+User=qwerty
+WorkingDirectory=/opt/qwerty-learner/backend
+ExecStart=/usr/bin/java -jar /opt/qwerty-learner/backend/lib/qwerty-learner.jar \
+  --spring.config.location=/opt/qwerty-learner/backend/config/application.yml \
+  --spring.datasource.url=jdbc:sqlite:/opt/qwerty-learner/backend/data/app.db
+StandardOutput=append:/opt/qwerty-learner/backend/logs/backend.log
+StandardError=append:/opt/qwerty-learner/backend/logs/backend.log
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### 前端 Service
+
+创建 `/etc/systemd/system/qwerty-frontend.service`：
+
+```ini
+[Unit]
+Description=Qwerty Learner Frontend
+After=network.target
+
+[Service]
+Type=simple
+User=qwerty
+WorkingDirectory=/opt/qwerty-learner/frontend
+ExecStart=/usr/bin/npx vite preview --port 5173 --host --outDir ./dist
+StandardOutput=append:/opt/qwerty-learner/frontend/logs/frontend.log
+StandardError=append:/opt/qwerty-learner/frontend/logs/frontend.log
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### 启用服务
+
+```bash
+# 重载 systemd
+sudo systemctl daemon-reload
+
+# 启动服务
+sudo systemctl start qwerty-backend qwerty-frontend
+
+# 开机自启
+sudo systemctl enable qwerty-backend qwerty-frontend
+
+# 查看状态
+sudo systemctl status qwerty-backend
+sudo systemctl status qwerty-frontend
+```
+
+---
+
+## 监控和日志
 
 ```bash
 # 使用 PM2 监控
