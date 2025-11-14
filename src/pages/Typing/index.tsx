@@ -13,6 +13,7 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
+import UserAvatarMenu from '@/components/UserAvatarMenu'
 import { useChapterCompletion } from '@/hooks/useChapterCompletion'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
@@ -173,6 +174,7 @@ const App: React.FC = () => {
               Skip
             </button>
           </Tooltip>
+          <UserAvatarMenu />
         </Header>
         <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
           <div className="container relative mx-auto flex h-full flex-col items-center">

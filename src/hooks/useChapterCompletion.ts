@@ -9,6 +9,7 @@ import { applyPatchToLocalProgress } from '@/services/progress/merge'
 import { enqueuePatch } from '@/services/progress/offlineBuffer'
 import { buildChapterPatch } from '@/services/progress/patchBuilder'
 import { progressAtom, syncStatusAtom } from '@/state/progressAtoms'
+import { isAuthenticatedAtom } from '@/store/authSlice'
 import type { ChapterResult } from '@/typings/progress'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
@@ -19,6 +20,7 @@ import { useCallback } from 'react'
  */
 export function useChapterCompletion() {
   const [progress, setProgress] = useAtom(progressAtom)
+  const [isAuthenticated] = useAtom(isAuthenticatedAtom)
   const [, setSyncStatus] = useAtom(syncStatusAtom)
 
   const onChapterComplete = useCallback(
@@ -41,24 +43,25 @@ export function useChapterCompletion() {
         enqueuePatch(patch)
         console.log('[ChapterCompletion] Patch enqueued to buffer')
 
-        // Immediate sync attempt
-        setSyncStatus('syncing')
-        console.log('[ChapterCompletion] Starting sync...')
-
-        try {
-          const response = await patchProgress(patch)
-          console.log('[ChapterCompletion] Sync response:', response)
-          // Server is authoritative: replace local with server response
-          setProgress(response.progress)
+        if (isAuthenticated) {
+          // Immediate sync attempt only for authenticated users
+          setSyncStatus('syncing')
+          console.log('[ChapterCompletion] Starting sync (authenticated)...')
+          try {
+            const response = await patchProgress(patch)
+            console.log('[ChapterCompletion] Sync response:', response)
+            // Server authoritative
+            setProgress(response.progress)
+            setSyncStatus('idle')
+            console.log('[ChapterCompletion] Sync successful ✅')
+          } catch (error) {
+            console.warn('[ChapterCompletion] Sync failed ❌, buffered for retry:', error)
+            setSyncStatus('error')
+          }
+        } else {
+          // Guest mode: no server sync, keep optimistic local progress
           setSyncStatus('idle')
-
-          // Clear buffer on success (handled by progressSync orchestrator)
-          console.log('[ChapterCompletion] Sync successful ✅')
-        } catch (error) {
-          // Network/server error: keep buffer intact
-          console.warn('[ChapterCompletion] Sync failed ❌, buffered for retry:', error)
-          setSyncStatus('error')
-          // Optimistic update remains; will retry on next trigger or manual sync
+          console.log('[ChapterCompletion] Guest mode - skipped server sync')
         }
       } catch (error) {
         console.error('[ChapterCompletion] Failed to process chapter completion:', error)
@@ -67,7 +70,7 @@ export function useChapterCompletion() {
 
       console.log('[ChapterCompletion] ===== END =====')
     },
-    [progress, setProgress, setSyncStatus],
+    [progress, setProgress, setSyncStatus, isAuthenticated],
   )
 
   return { onChapterComplete }

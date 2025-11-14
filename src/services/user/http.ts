@@ -86,15 +86,17 @@ async function request<T>(endpoint: string, options: RequestOptions = {}): Promi
     const errorText = await response.text()
     const error = new ApiError(response.status, response.statusText, errorText || 'Request failed')
 
-    // Handle 401 Unauthorized - token expired or invalid
-    if (response.status === 401) {
-      console.warn('[HTTP] 401 Unauthorized - logging out and redirecting')
-      // Use global logout to clear auth state
+    // Handle 401 Unauthorized ONLY if we actually sent an auth header (i.e., user thought they were logged in)
+    const hadAuthHeader = !!headers['Authorization']
+    if (response.status === 401 && hadAuthHeader) {
+      console.warn('[HTTP] 401 Unauthorized with auth header - logging out and redirecting')
       globalLogout()
-      // Redirect to login page (will be handled by ProtectedRoute on next render)
       if (typeof window !== 'undefined' && !window.location.pathname.includes('/login')) {
         window.location.href = '/login'
       }
+    } else if (response.status === 401) {
+      // Guest mode 401: suppress redirect
+      console.info('[HTTP] 401 Unauthorized (guest/no token) - no redirect')
     }
 
     throw error

@@ -8,7 +8,9 @@ import { getReviewQueue, submitReview as submitReviewApi } from './api'
 import { applyPatchToLocalProgress } from './merge'
 import { enqueuePatch } from './offlineBuffer'
 import { buildReviewPatch } from './patchBuilder'
+import { isAuthenticatedAtom } from '@/store/authSlice'
 import type { ReviewItemResult, ReviewSessionResult, UserProgress } from '@/typings/progress'
+import { getDefaultStore } from 'jotai'
 
 /**
  * Load review queue for starting a review session
@@ -59,14 +61,19 @@ export async function submitReviewResults(
       completedAt: new Date().toISOString(),
     }
 
-    try {
-      const response = await submitReviewApi(sessionResult)
-      // Server is authoritative
-      setProgress(response.progress)
-      console.log('[Review] Submission successful')
-    } catch (error) {
-      console.warn('[Review] Submission failed, buffered for retry:', error)
-      // Optimistic update remains
+    const store = getDefaultStore()
+    const isAuthenticated = store.get(isAuthenticatedAtom)
+    if (isAuthenticated) {
+      try {
+        const response = await submitReviewApi(sessionResult)
+        setProgress(response.progress)
+        console.log('[Review] Submission successful')
+      } catch (error) {
+        console.warn('[Review] Submission failed, buffered for retry:', error)
+        // Optimistic update remains
+      }
+    } else {
+      console.log('[Review] Guest mode - skipped server submission')
     }
   } catch (error) {
     console.error('[Review] Failed to process review results:', error)
