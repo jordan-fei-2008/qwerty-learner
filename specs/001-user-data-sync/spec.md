@@ -5,13 +5,13 @@
 **Status**: Draft  
 **Input**: User description: "增加用户注册登录，并将用户词汇记忆和进度数据保存到后端，实现跨设备继续使用"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 <!--
   IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
   Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
   you should still have a viable MVP (Minimum Viable Product) that delivers value.
-  
+
   Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
   Think of each story as a standalone slice of functionality that can be:
   - Developed independently
@@ -74,6 +74,7 @@
 **Independent Test**: 仅实现会话游标保存与加载即可在多设备间验证继续位置。
 
 **Acceptance Scenarios**:
+
 1. **Given** 用户在设备 A 学习到第 N 个词并退出， **When** 在设备 B 登录进入学习界面， **Then** 系统从第 N+1 个待学习词开始。
 2. **Given** 用户未开始会话即退出， **When** 在新设备登录， **Then** 系统从队列首词开始。
 
@@ -85,7 +86,7 @@
 - 用户快速频繁操作导致多次进度保存请求（需防止覆盖或丢失最后状态）。
 - 用户更换词库版本，云端存在旧词汇引用（需定义忽略或迁移策略）。
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
@@ -100,13 +101,13 @@
 - **FR-004**: 系统必须在每次影响学习状态的操作（标记掌握、提升熟悉度、添加到复习队列、复习完成）后触发一次云端持久化（可批量延迟合并以避免过多写入——按体验合理默认）。
 - **FR-005**: 系统必须保存并可返回以下用户学习数据集：已掌握词列表、词熟悉度/记忆等级、待复习队列及下次复习时间点、学习统计（累计学习词数、今日学习数、连续学习天数）、当前会话指针（可选）。
 - **FR-006**: 系统必须在网络失败时将未成功提交的学习操作暂存并在连接恢复后自动重试直至成功或用户放弃。
--- **FR-007**: 系统必须在登录后执行冲突检测：若本地存在尚未同步的学习操作，系统直接以云端状态覆盖本地临时数据（不进行细粒度合并提示）。
+  -- **FR-007**: 系统必须在登录后执行冲突检测：若本地存在尚未同步的学习操作，系统直接以云端状态覆盖本地临时数据（不进行细粒度合并提示）。
 - **FR-008**: 系统必须确保同一用户在不同设备近实时看到最新进度（允许合理的短延迟，详见成功标准）。
 - **FR-009**: 系统必须允许用户主动触发一次“立即同步”以确认最新状态已保存。
 - **FR-010**: 系统必须记录学习天数连续性并在断开超过一天后自动重置连续计数。
 - **FR-011**: 系统必须提供基础安全保护：密码不可明文返回，登录失败不透露是否用户名存在（防枚举）。
 - **FR-012**: 系统必须支持用户退出登录后清除本地敏感缓存（学习进度缓存视需要保留匿名副本）。
--- **FR-013**: 系统必须允许用户在忘记密码情境下通过回答预设安全问题完成密码重置（不使用邮件或短信）。
+  -- **FR-013**: 系统必须允许用户在忘记密码情境下通过回答预设安全问题完成密码重置（不使用邮件或短信）。
 - **FR-014**: 系统必须维护词库版本引用：当词库更新移除词汇时，不影响用户已掌握统计（旧词可标记“已归档”）。
 
 （所有 Clarification 已决：覆盖策略=云端覆盖；重置方式=安全问题；不进行细粒度逐词合并）
@@ -120,7 +121,7 @@
 - **词库版本映射**: 词库版本号、包含词条集合、归档标记（对于已删除词条）。
 - **未同步操作缓冲**: 操作类型（提升熟悉度、标记掌握等）、目标词、时间戳、重试次数。
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 <!--
   ACTION REQUIRED: Define measurable success criteria.
@@ -187,4 +188,3 @@
 - **AC-012 (FR-012)**: 退出登录后再次进入学习界面不显示前一账号的统计数据（除匿名副本不含敏感字段）。
 - **AC-013 (FR-013)**: 用户提供正确安全问题答案后可设置新密码并可登录；错误答案三次失败需冷却提示。
 - **AC-014 (FR-014)**: 被词库移除的词仍计入用户已掌握统计并标记归档，不再出现在新学习队列。
-

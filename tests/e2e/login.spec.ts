@@ -40,7 +40,7 @@ test.describe('User Login', () => {
     expect(progressStr).not.toBeNull()
 
     const progress = JSON.parse(progressStr || '{}')
-    
+
     // Check progress has expected structure
     expect(progress).toHaveProperty('masteredWords')
     expect(progress).toHaveProperty('familiarity')

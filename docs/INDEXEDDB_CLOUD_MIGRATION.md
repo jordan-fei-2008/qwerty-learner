@@ -5,7 +5,9 @@
 已完成将 IndexedDB 数据迁移到云端后端存储，同时保持前端页面逻辑不变。
 
 ### 后端变更
+
 1. **新增 API 端点**：
+
    - `POST /api/progress/word-records` - 保存单词记录
    - `GET /api/progress/word-records?startTime=xxx&endTime=xxx` - 查询单词记录
 
@@ -14,11 +16,14 @@
    - 新增 `wordRecords` 数组字段，包含所有练习记录
 
 ### 前端变更
+
 1. **双写机制**：
+
    - `useSaveWordRecord` hook 同时保存到 IndexedDB（兼容）和云端
    - 确保旧功能正常工作的同时积累云端数据
 
 2. **读取优先级**：
+
    - Analysis 页面优先从云端读取，失败时降级到 IndexedDB
    - 确保数据可用性
 
@@ -61,15 +66,17 @@
 ### 第三步：检查 Analysis 页面数据
 
 在无痕浏览器中：
+
 1. **进入 /analysis 路径**
 2. **验证显示内容**：
    - 练习次数热力图
-   - 练习词数热力图  
+   - 练习词数热力图
    - WPM 趋势图
    - 正确率趋势图
    - 按键错误统计
 
 如果显示"暂无练习数据"，检查：
+
 - Console 中是否有错误日志
 - Network 面板中 `/api/progress/word-records` 请求是否成功（200 OK）
 - 响应数据是否包含记录
@@ -77,20 +84,24 @@
 ## 当前限制
 
 ### 已解决
+
 ✅ 单词记录云端存储  
 ✅ Analysis 页面云端数据读取  
 ✅ 向后兼容（本地 IndexedDB 仍然工作）
 
 ### 待解决
+
 ❌ ErrorBook 页面仍使用 IndexedDB（需要类似 Analysis 的修改）  
-❌ 登录时没有将云端数据同步到本地 IndexedDB（可选）  
+❌ 登录时没有将云端数据同步到本地 IndexedDB（可选）
 
 ## 下一步工作
 
 ### 选项 A：完全迁移 ErrorBook
+
 修改 ErrorBook 页面，让它也从云端读取数据（类似 Analysis 的实现）
 
 ### 选项 B：渐进式废弃 IndexedDB
+
 1. 继续积累云端数据
 2. 逐步重构所有依赖 IndexedDB 的页面
 3. 最终完全移除 IndexedDB 相关代码
@@ -98,6 +109,7 @@
 ## 回滚方案
 
 如果出现问题，可以快速回滚：
+
 1. 从 Git 恢复以下文件：
    - `src/utils/db/index.ts`
    - `src/pages/Analysis/hooks/useWordStats.ts`
@@ -107,11 +119,13 @@
 ## 数据库备份
 
 测试前建议备份数据库：
+
 ```bash
 cp data/app.db data/app.db.backup.$(date +%Y%m%d_%H%M%S)
 ```
 
 恢复：
+
 ```bash
 cp data/app.db.backup.YYYYMMDD_HHMMSS data/app.db
 ```

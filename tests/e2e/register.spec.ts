@@ -57,7 +57,7 @@ test.describe('User Registration', () => {
 
     // Should stay on registration page and show error
     await page.waitForTimeout(2000)
-    
+
     // Check for error message
     const errorMessage = await page.locator('text=/用户名已存在|已被使用/i').isVisible()
     expect(errorMessage).toBeTruthy()
@@ -75,7 +75,7 @@ test.describe('User Registration', () => {
 
     // Should show validation errors
     await page.waitForTimeout(500)
-    
+
     // Check if HTML5 validation is triggered or custom error messages shown
     const usernameInput = page.locator('input[name="username"]')
     const isInvalid = await usernameInput.evaluate((el: HTMLInputElement) => !el.validity.valid)

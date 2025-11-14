@@ -115,7 +115,10 @@ test.describe('Password Reset', () => {
     expect(errorVisible).toBeTruthy()
 
     // Should not proceed to security question step
-    const questionNotVisible = await page.locator('input[name="securityAnswer"]').isVisible().catch(() => false)
+    const questionNotVisible = await page
+      .locator('input[name="securityAnswer"]')
+      .isVisible()
+      .catch(() => false)
     expect(questionNotVisible).toBeFalsy()
 
     console.log('✅ Nonexistent user correctly rejected')

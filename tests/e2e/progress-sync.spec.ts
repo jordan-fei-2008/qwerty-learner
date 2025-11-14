@@ -92,16 +92,19 @@ test.describe('Progress Synchronization', () => {
 
     // Immediately check localStorage for offline buffer (before debounce triggers)
     await page.waitForTimeout(500) // Give time for buffer to be saved
-    
+
     const offlineBuffer = await page.evaluate(() => {
       return localStorage.getItem('qwerty_offline_progress_buffer')
     })
-    
+
     console.log('Offline buffer in localStorage:', offlineBuffer ? 'exists' : 'null')
 
     // Verify pending count is shown
     const syncButton = page.locator('button:has-text("立即同步")')
-    const pendingBadgeText = await syncButton.locator('.bg-blue-500').textContent().catch(() => '0')
+    const pendingBadgeText = await syncButton
+      .locator('.bg-blue-500')
+      .textContent()
+      .catch(() => '0')
     const pendingCount = parseInt(pendingBadgeText || '0')
     expect(pendingCount).toBeGreaterThan(0)
 
@@ -113,7 +116,7 @@ test.describe('Progress Synchronization', () => {
 
     // After reload, operations should be restored from localStorage
     // and automatically synced
-    
+
     // Wait for auto-sync to complete
     await page.waitForTimeout(4000)
 
@@ -153,7 +156,10 @@ test.describe('Progress Synchronization', () => {
     await syncButton.click()
 
     // Should show syncing state
-    const syncingVisible = await page.locator('text=同步中').isVisible().catch(() => false)
+    const syncingVisible = await page
+      .locator('text=同步中')
+      .isVisible()
+      .catch(() => false)
     console.log('Syncing state shown:', syncingVisible)
 
     // Wait for sync to complete
@@ -188,7 +194,7 @@ test.describe('Progress Synchronization', () => {
 
     // Quickly add multiple words
     const words = [`batch1_${Date.now()}`, `batch2_${Date.now()}`, `batch3_${Date.now()}`]
-    
+
     for (const word of words) {
       await page.fill('input[placeholder="输入要添加的单词"]', word)
       await page.click('button:has-text("添加掌握的单词")')

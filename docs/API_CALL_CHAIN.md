@@ -25,9 +25,11 @@ Backend API (/api/progress)
 目前有 3 个地方调用了进度同步：
 
 #### 📝 A. ProgressTest 页面（测试页面）
+
 **文件：** `src/pages/ProgressTest.tsx`
 
 **调用方式：**
+
 ```tsx
 import { useProgressSync } from '@/hooks/useProgressSync'
 
@@ -43,20 +45,20 @@ const handleAddMasteredWord = () => {
       todayLearned: progress.stats.todayLearned + 1,
     },
   }
-  
+
   setProgress(updatedProgress)
-  syncProgress(updatedProgress)  // 👈 调用同步
+  syncProgress(updatedProgress) // 👈 调用同步
 }
 
 // 场景2: 更新连续天数
 const handleIncrementStreak = () => {
   const updatedProgress = {
     ...progress,
-    stats: { ...progress.stats, streakDays: progress.stats.streakDays + 1 }
+    stats: { ...progress.stats, streakDays: progress.stats.streakDays + 1 },
   }
-  
+
   setProgress(updatedProgress)
-  syncProgress(updatedProgress)  // 👈 调用同步
+  syncProgress(updatedProgress) // 👈 调用同步
 }
 ```
 
@@ -65,29 +67,34 @@ const handleIncrementStreak = () => {
 ---
 
 #### ☁️ B. SyncNowButton 组件（立即同步按钮）
+
 **文件：** `src/components/SyncNowButton.tsx`
 
 **调用方式：**
+
 ```tsx
 import { useProgressSync } from '@/hooks/useProgressSync'
 
 const { syncNow, pendingCount, isSyncing } = useProgressSync()
 
 const handleClick = async () => {
-  await syncNow()  // 👈 立即同步所有待处理的操作
+  await syncNow() // 👈 立即同步所有待处理的操作
 }
 ```
 
 **使用位置：**
+
 - ProgressTest 页面的右上角
 - 其他任何需要手动同步按钮的地方
 
 ---
 
 #### 📚 C. useSessionResume Hook（断点续学）
+
 **文件：** `src/hooks/useSessionResume.ts`
 
 **调用方式：**
+
 ```tsx
 import { useProgressSync } from './useProgressSync'
 
@@ -97,24 +104,26 @@ const { syncProgress } = useProgressSync()
 const saveSessionPointer = (wordset: string, nextIndex: number) => {
   const updatedProgress = updateSessionPointer(progress, wordset, nextIndex)
   setProgress(updatedProgress)
-  syncProgress(updatedProgress)  // 👈 立即同步断点
+  syncProgress(updatedProgress) // 👈 立即同步断点
 }
 
 // 场景2: 清除断点
 const clearSession = () => {
   const updatedProgress = clearSessionPointer(progress)
   setProgress(updatedProgress)
-  syncProgress(updatedProgress)  // 👈 同步清除操作
+  syncProgress(updatedProgress) // 👈 同步清除操作
 }
 ```
 
 **使用位置：**
+
 - 任何使用 `useSessionResume()` hook 的组件
 - 如：学习页面保存进度时
 
 ---
 
 ### 2. **Hook 层：useProgressSync**
+
 **文件：** `src/hooks/useProgressSync.ts`
 
 ```tsx
@@ -124,13 +133,13 @@ export function useProgressSync() {
   // 方法1: 队列同步（防抖）
   const syncProgress = (update: Partial<UserProgress>) => {
     if (!isAuthenticated) return
-    queueProgressUpdate(update)  // 👈 调用 Service 层
+    queueProgressUpdate(update) // 👈 调用 Service 层
   }
 
   // 方法2: 立即同步
   const syncNow = async () => {
     if (!isAuthenticated) return
-    await syncNowService()  // 👈 调用 Service 层
+    await syncNowService() // 👈 调用 Service 层
   }
 
   return { syncProgress, syncNow, pendingCount, isSyncing }
@@ -138,6 +147,7 @@ export function useProgressSync() {
 ```
 
 **职责：**
+
 - ✅ 检查用户是否已登录
 - ✅ 提供统一的同步接口
 - ✅ 管理同步状态（pendingCount, isSyncing）
@@ -146,6 +156,7 @@ export function useProgressSync() {
 ---
 
 ### 3. **Service 层：progressSync.ts**
+
 **文件：** `src/services/user/progressSync.ts`
 
 #### 核心方法
@@ -155,18 +166,18 @@ export function useProgressSync() {
 export function queueProgressUpdate(update: Partial<UserProgress>) {
   operationBuffer.push(update)
   onBufferChange?.(operationBuffer.length)
-  saveOfflineBuffer()  // 持久化到 localStorage
+  saveOfflineBuffer() // 持久化到 localStorage
 
   // 条件1: 缓冲区满（10个操作）→ 立即同步
   if (operationBuffer.length >= MAX_BUFFER_SIZE) {
-    void flushUpdates()  // 👈 发起 HTTP 请求
+    void flushUpdates() // 👈 发起 HTTP 请求
     return
   }
 
   // 条件2: 防抖（3秒后同步）
   if (debounceTimer) clearTimeout(debounceTimer)
   debounceTimer = setTimeout(() => {
-    void flushUpdates()  // 👈 发起 HTTP 请求
+    void flushUpdates() // 👈 发起 HTTP 请求
   }, DEBOUNCE_MS)
 }
 
@@ -175,7 +186,7 @@ export async function syncNow(): Promise<ProgressResponse | null> {
   if (debounceTimer) {
     clearTimeout(debounceTimer)
   }
-  return flushUpdates()  // 👈 发起 HTTP 请求
+  return flushUpdates() // 👈 发起 HTTP 请求
 }
 
 // 方法3: 刷新缓冲区（实际发送 HTTP 请求）
@@ -191,12 +202,16 @@ async function flushUpdates(): Promise<ProgressResponse | null> {
     const mergedProgress = mergeProgressUpdates(operationBuffer)
 
     // 发送到后端 👇👇👇
-    const response = await http.put<ProgressResponse>('/progress', {
-      schemaVersion: 1,
-      progress: mergedProgress,
-    }, {
-      token: currentToken,
-    })
+    const response = await http.put<ProgressResponse>(
+      '/progress',
+      {
+        schemaVersion: 1,
+        progress: mergedProgress,
+      },
+      {
+        token: currentToken,
+      },
+    )
 
     // 清空缓冲区
     operationBuffer = []
@@ -216,9 +231,10 @@ async function flushUpdates(): Promise<ProgressResponse | null> {
 ```
 
 **职责：**
+
 - ✅ 管理操作缓冲区（operationBuffer）
-- ✅ 实现防抖逻辑（3秒）
-- ✅ 实现缓冲区满自动刷新（10个操作）
+- ✅ 实现防抖逻辑（3 秒）
+- ✅ 实现缓冲区满自动刷新（10 个操作）
 - ✅ 离线支持（localStorage 持久化）
 - ✅ 合并多个部分更新为一个完整请求
 - ✅ 触发回调通知 UI（onSyncStart, onSyncSuccess, onSyncError）
@@ -226,6 +242,7 @@ async function flushUpdates(): Promise<ProgressResponse | null> {
 ---
 
 ### 4. **HTTP 层：http.ts**
+
 **文件：** `src/services/user/http.ts`
 
 ```tsx
@@ -263,6 +280,7 @@ async function request<T>(endpoint: string, options: RequestOptions = {}): Promi
 ```
 
 **实际请求：**
+
 ```http
 PUT /api/progress HTTP/1.1
 Host: localhost:8080
@@ -289,6 +307,7 @@ Authorization: Bearer eyJhbGc...  👈 JWT Token
 ---
 
 ### 5. **Backend 处理**
+
 **文件：** `backend/.../controller/ProgressController.java`
 
 ```java
@@ -296,11 +315,11 @@ Authorization: Bearer eyJhbGc...  👈 JWT Token
 public ResponseEntity<?> updateProgress(
         @RequestHeader("Authorization") String authHeader,
         @Valid @RequestBody ProgressUpdateRequest request) {
-    
+
     // 1. 提取并验证 token
     String token = extractToken(authHeader);
     Long userId = tokenUtil.getUserIdFromToken(token);
-    
+
     if (userId == null) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
             .body(Map.of("error", "Invalid or expired token"));
@@ -308,13 +327,14 @@ public ResponseEntity<?> updateProgress(
 
     // 2. 更新进度
     ProgressResponse response = progressService.updateProgress(userId, request);
-    
+
     // 3. 返回更新后的进度
     return ResponseEntity.ok(response);
 }
 ```
 
 **响应示例：**
+
 ```json
 {
   "schemaVersion": 1,
@@ -375,10 +395,12 @@ public ResponseEntity<?> updateProgress(
 ### 目前调用 `/api/progress` 的地方：
 
 1. **ProgressTest 页面** (`src/pages/ProgressTest.tsx`)
+
    - 添加已掌握单词
    - 更新学习统计
 
 2. **SyncNowButton 组件** (`src/components/SyncNowButton.tsx`)
+
    - 手动立即同步按钮
 
 3. **useSessionResume Hook** (`src/hooks/useSessionResume.ts`)
@@ -386,8 +408,8 @@ public ResponseEntity<?> updateProgress(
 
 ### 同步触发时机：
 
-- ⏱️ **防抖同步**：3秒内无新操作 → 自动同步
-- 📊 **缓冲区满**：累积10次操作 → 立即同步
+- ⏱️ **防抖同步**：3 秒内无新操作 → 自动同步
+- 📊 **缓冲区满**：累积 10 次操作 → 立即同步
 - 🔘 **手动触发**：点击"立即同步"按钮 → 立即同步
 - 📚 **断点保存**：保存学习进度 → 立即同步
 

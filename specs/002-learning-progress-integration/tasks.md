@@ -5,6 +5,7 @@ Spec: `specs/002-learning-progress-integration/spec.md`
 Plan: `specs/002-learning-progress-integration/plan.md`
 
 ## Dependency Graph (User Stories)
+
 ```
 US1 (P1) ─┬─> US2 (P2)
           ├─> US3 (P2)
@@ -15,9 +16,11 @@ US4 ─┴─> (none)
 US5 ─┴─> (none)
 US6 ─┴─> (none)
 ```
+
 Rationale: Foundational chapter completion persistence (US1) must precede error/review accumulation (US2), pointer automation (US3), and offline buffering (US6). Review mode (US4) depends on a populated queue (US2). Stats logic (US5) depends on mastery events (US1) & pointer/session continuity (US3). Offline replay (US6) can be parallel after minimal patch pipeline exists (post US1 core patch builder) but before polishing review & stats.
 
 ## Phase 1: Setup
+
 Infrastructure / baseline adjustments before story work.
 
 - [x] T001 Create progress service directory structure in src/services/progress/
@@ -27,6 +30,7 @@ Infrastructure / baseline adjustments before story work.
 - [x] T005 Add API client stub src/services/progress/api.ts (getProgress, patchProgress, submitReview stubs)
 
 ## Phase 2: Foundational (Core Patch & Merge Engine)
+
 Enables US1 minimal viable path; no story label used per prompt.
 
 - [x] T006 Implement patch builder core in src/services/progress/patchBuilder.ts (buildChapterPatch: chapterResult -> ProgressPatch with masteredWords, familiarity, sessionPointer)
@@ -36,6 +40,7 @@ Enables US1 minimal viable path; no story label used per prompt.
 - [x] T010 Add day boundary helper in src/utils/date.ts (getTodayDateString, isConsecutiveDay)
 
 ## Phase 3: User Story 1 (P1) Chapter Completion Cloud Save
+
 Goal: Persist real chapter outcomes (masteredWords + basic familiarity + pointer) and see on another device.
 Independent Test: Complete a chapter -> patch sent -> login elsewhere -> new masteredWords visible.
 
@@ -46,6 +51,7 @@ Independent Test: Complete a chapter -> patch sent -> login elsewhere -> new mas
 - [x] T015 [US1] Ensure GET /api/progress hydration on login in src/services/user/progressSync.ts (load before any patch build)
 
 ## Phase 4: User Story 2 (P2) Error Words & Familiarity Accumulation
+
 Goal: Errors populate reviewQueue; familiarity map records levels.
 Independent Test: Chapter with errors -> reviewQueue contains them, no duplicates.
 
@@ -54,6 +60,7 @@ Independent Test: Chapter with errors -> reviewQueue contains them, no duplicate
 - [ ] T018 [US2] Test manually: chapter with errors populates reviewQueue without duplicates
 
 ## Phase 5: User Story 3 (P2) Session Pointer Automation
+
 Goal: Seamless resume mid-chapter and across chapters.
 Independent Test: Learn to index n on device A -> device B shows resume at n.
 
@@ -62,6 +69,7 @@ Independent Test: Learn to index n on device A -> device B shows resume at n.
 - [ ] T021 [US3] Test manually: mid-chapter exit -> resume pointer persists across sessions
 
 ## Phase 6: User Story 4 (P3) Review Mode
+
 Goal: Consume reviewQueue, adjust familiarity, remove mastered items.
 Independent Test: Run review for queued words -> words reaching familiarity ≥7 leave queue.
 
@@ -71,6 +79,7 @@ Independent Test: Run review for queued words -> words reaching familiarity ≥7
 - [ ] T025 [US4] Test manually: review session removes mastered words from queue
 
 ## Phase 7: User Story 5 (P3) Stats & Streaks
+
 Goal: Maintain stats.totalLearned, todayLearned, streakDays.
 Independent Test: Simulate two consecutive days mastering words -> streakDays increments.
 
@@ -78,6 +87,7 @@ Independent Test: Simulate two consecutive days mastering words -> streakDays in
 - [ ] T027 [US5] Test manually: multi-day mastery updates streakDays correctly
 
 ## Phase 8: User Story 6 (P3) Offline Buffer Replay
+
 Goal: Queue patches offline and merge-submit when online.
 Independent Test: Offline for multiple chapters -> one merged patch upon reconnect.
 
@@ -94,17 +104,22 @@ Independent Test: Offline for multiple chapters -> one merged patch upon reconne
 - [ ] T035 Final FR checklist validation (mark completion in specs/002-learning-progress-integration/requirements.md)
 
 ## Parallel Execution Opportunities
+
 Examples (independent files/no collisions):
+
 - After Phase 2: T016 (reviewQueue), T019 (sessionPointer), T022 (review service) can run in parallel once base patchBuilder exists.
 - Review UI (T023) parallel with stats logic (T026) after foundational patch pipeline stable.
 - SyncStatusBadge (T031) parallel with retry logic (T032).
 
 ## MVP Recommendation
+
 Deliver MVP with Phase 1 + Phase 2 + Phase 3 (US1) only:
+
 - Enables core masteredWords persistence & cross-device chapter completion sync.
 - Defers review, stats, offline complexity until base validated.
 
 ## Task Counts
+
 - Total Tasks: 35 (simplified from 62)
 - By User Story:
   - US1: 5 (T011-T015)
@@ -116,6 +131,7 @@ Deliver MVP with Phase 1 + Phase 2 + Phase 3 (US1) only:
 - Setup / Foundational / Polish: 15
 
 ## Independent Test Criteria Summary
+
 - US1: Chapter completion -> remote masteredWords visible within 5s.
 - US2: Error words appear once in reviewQueue; no duplicates, capacity respected.
 - US3: Resume mid-chapter index consistent across devices after pointer sync.
@@ -124,5 +140,5 @@ Deliver MVP with Phase 1 + Phase 2 + Phase 3 (US1) only:
 - US6: Offline multi-chapter merge produces correct union & familiarity caps.
 
 ## Format Validation
-All tasks follow required format: `- [ ] T### [P]? [US#]? Description with file path`. Story phases include [US#]; setup/foundational/polish omit story label. Parallelizable tasks marked [P]. Manual testing replaces formal unit/integration tests for simplified iteration.
 
+All tasks follow required format: `- [ ] T### [P]? [US#]? Description with file path`. Story phases include [US#]; setup/foundational/polish omit story label. Parallelizable tasks marked [P]. Manual testing replaces formal unit/integration tests for simplified iteration.

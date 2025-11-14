@@ -3,12 +3,14 @@
 ## 问题诊断
 
 已确认：
+
 - ✅ API 接口被调用（`POST /api/progress/patch`）
 - ❌ 数据库表 `user_progress` 未更新
 
 ## 已添加详细日志
 
 我在 `ProgressService.patchProgress()` 方法中添加了完整的日志追踪，现在可以看到：
+
 - 方法是否被执行
 - 每个步骤的执行情况
 - 数据库 update 是否被调用
@@ -33,6 +35,7 @@ cd backend
 ```
 
 等待看到：
+
 ```
 Started Application in X.XXX seconds
 ```
@@ -46,7 +49,9 @@ Started Application in X.XXX seconds
 ### 步骤 4: 查看后端日志
 
 #### 方法 A: 在运行 bootRun 的终端直接查看
+
 应该看到类似：
+
 ```
 2025-11-01 22:xx:xx - [PatchProgress] START - userId: 1
 2025-11-01 22:xx:xx - [PatchProgress] Found existing progress for user 1
@@ -57,6 +62,7 @@ Started Application in X.XXX seconds
 ```
 
 #### 方法 B: 查看日志文件
+
 ```bash
 cd backend
 tail -f logs/qwerty-learner.log
@@ -84,10 +90,12 @@ sqlite3 data/app.db "SELECT progress_json FROM user_progress WHERE user_id = 1;"
 **说明**: API 请求没有到达 ProgressService
 
 **可能原因**:
+
 1. Controller 层出错（401/400 等）
 2. 请求被拦截器/过滤器拦截
 
 **检查**:
+
 - 查看日志中是否有 ERROR 或 WARN
 - 在 Network 标签查看 Response，确认返回的是 200 还是其他状态码
 
@@ -96,6 +104,7 @@ sqlite3 data/app.db "SELECT progress_json FROM user_progress WHERE user_id = 1;"
 **说明**: patchProgress 方法执行中出现异常
 
 **检查**:
+
 - 查看日志中紧接着的 ERROR 信息
 - 可能是 JSON 解析失败或数据格式问题
 
@@ -104,6 +113,7 @@ sqlite3 data/app.db "SELECT progress_json FROM user_progress WHERE user_id = 1;"
 **说明**: update 方法调用时出错
 
 **可能原因**:
+
 1. SQL 语法错误
 2. 数据库锁定
 3. 事务回滚
@@ -116,11 +126,13 @@ sqlite3 data/app.db "SELECT progress_json FROM user_progress WHERE user_id = 1;"
 **说明**: 可能是事务未提交
 
 **排查**:
+
 1. 检查是否有多个数据库文件（app.db vs qwerty.db）
 2. 检查是否查看了错误的数据库
 3. 检查 @Transactional 注解是否生效
 
 **验证正确的数据库**:
+
 ```bash
 # 查看配置文件中的数据库路径
 cat backend/src/main/resources/application.yml | grep "url:"
@@ -145,6 +157,7 @@ public ProgressResponse patchProgress(Long userId, ProgressPatchRequest patch) {
 ```
 
 重新编译并测试：
+
 ```bash
 ./gradlew build -x test
 ./gradlew bootRun
@@ -225,6 +238,7 @@ echo -e "\n=== 完成 ==="
 ```
 
 保存为 `check_database.sh`，然后执行：
+
 ```bash
 chmod +x check_database.sh
 ./check_database.sh

@@ -53,6 +53,7 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
+
 <!--
   ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
   for this feature. Delete unused options and expand the chosen structure with
@@ -83,12 +84,13 @@ tests/
 > **Fill ONLY if Constitution Check has violations that must be justified**
 
 | Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| (none) |  |  |
+| --------- | ---------- | ------------------------------------ |
+| (none)    |            |                                      |
 
 ## Constitution Re-Check (Post Design)
 
 No concrete principles provided in constitution file; design introduces:
+
 - New backend module (monorepo addition) — justified by feature server need.
 - SQLite selection aligns with simplicity principle (implied YAGNI).
 

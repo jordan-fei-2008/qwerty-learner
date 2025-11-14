@@ -10,11 +10,11 @@ The project is a monorepo with a React frontend and a Java Spring Boot backend.
 
 The frontend is a modern React application built with Vite. It uses Tailwind CSS for styling and a variety of other libraries, including:
 
-*   **State Management:** Jotai
-*   **UI Components:** Headless UI, Radix UI
-*   **Data Fetching:** SWR
-*   **Database:** Dexie.js (IndexedDB wrapper)
-*   **Routing:** React Router
+- **State Management:** Jotai
+- **UI Components:** Headless UI, Radix UI
+- **Data Fetching:** SWR
+- **Database:** Dexie.js (IndexedDB wrapper)
+- **Routing:** React Router
 
 ### Backend
 
@@ -24,8 +24,8 @@ The backend is a Spring Boot application that provides a REST API for user authe
 
 ### Prerequisites
 
-*   Node.js and Yarn
-*   Java 21 and Gradle
+- Node.js and Yarn
+- Java 21 and Gradle
 
 ### Running the Backend
 
@@ -58,8 +58,8 @@ The backend is a Spring Boot application that provides a REST API for user authe
 
 The project uses ESLint for linting and Prettier for formatting. You can run the following commands to check and fix the code:
 
-*   `yarn lint`
-*   `yarn prettier`
+- `yarn lint`
+- `yarn prettier`
 
 ### Testing
 

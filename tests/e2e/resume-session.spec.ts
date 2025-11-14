@@ -45,12 +45,12 @@ test.describe('Session Resume - Cross-Device Learning Continuity', () => {
 
     // Trigger sync to save session pointer to server
     const syncButton = page1.locator('button:has-text("立即同步")')
-    
+
     // Add a test word to create a sync operation
     await page1.fill('input[placeholder="输入要添加的单词"]', 'session_test')
     await page1.click('button:has-text("添加掌握的单词")')
     await page1.waitForTimeout(500)
-    
+
     // Click sync button to immediately sync
     await syncButton.click()
 

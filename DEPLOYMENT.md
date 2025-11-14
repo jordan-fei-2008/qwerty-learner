@@ -27,6 +27,7 @@ tail -f logs/frontend.log
 ```
 
 ### 访问地址
+
 - 前端：http://localhost:5173
 - 后端：http://localhost:8080
 
@@ -62,6 +63,7 @@ tail -f logs/frontend.log
 ```
 
 ### 功能
+
 - ✅ 自动检测端口占用
 - ✅ 优雅关闭进程
 - ✅ 完整的日志管理
@@ -127,6 +129,7 @@ pm2 delete all
 ```
 
 ### PM2 优势
+
 - ✅ 自动重启（崩溃恢复）
 - ✅ 日志管理和轮转
 - ✅ 监控和性能指标
@@ -139,11 +142,13 @@ pm2 delete all
 ## 环境要求
 
 ### 必需
+
 - **Java**: JDK 17 或更高版本
 - **Node.js**: v18 或更高版本
 - **Gradle**: 通过项目内置的 gradlew
 
 ### 可选
+
 - **PM2**: 用于方式三部署（`npm install -g pm2`）
 
 ---
@@ -175,15 +180,17 @@ qwerty-learner/
 ## 端口配置
 
 默认端口：
+
 - **后端**：8080
 - **前端**：5173
 
 ### 修改端口
 
 1. **后端端口**：编辑 `backend/src/main/resources/application.yml`
+
    ```yaml
    server:
-     port: 8080  # 修改为你想要的端口
+     port: 8080 # 修改为你想要的端口
    ```
 
 2. **前端端口**：编辑部署脚本中的 `--port 5173`
@@ -276,11 +283,13 @@ sudo ./setup-nginx.sh
 #### 安装 Nginx
 
 **Ubuntu/Debian:**
+
 ```bash
 sudo apt-get update && sudo apt-get install -y nginx
 ```
 
 **CentOS/RHEL:**
+
 ```bash
 sudo yum install -y nginx
 ```
@@ -293,9 +302,9 @@ sudo yum install -y nginx
 server {
     listen 80;
     server_name your-domain.com;  # 或 IP 地址
-    
+
     client_max_body_size 10M;
-    
+
     # 前端
     location / {
         proxy_pass http://localhost:5173;
@@ -308,7 +317,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_cache_bypass $http_upgrade;
     }
-    
+
     # 后端 API
     location /api {
         proxy_pass http://localhost:8080;
@@ -317,7 +326,7 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
-        
+
         proxy_connect_timeout 60s;
         proxy_send_timeout 60s;
         proxy_read_timeout 60s;
@@ -339,12 +348,14 @@ sudo systemctl enable nginx
 #### 开放防火墙端口
 
 **Ubuntu (ufw):**
+
 ```bash
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
 **CentOS (firewalld):**
+
 ```bash
 sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --permanent --add-service=https
@@ -363,7 +374,7 @@ curl http://your-server/
 curl http://your-server/api/health
 ```
 
-**重要：** 配置 Nginx 后，用户应该访问 `http://your-server`（80端口），而不是 `http://your-server:5173`。
+**重要：** 配置 Nginx 后，用户应该访问 `http://your-server`（80 端口），而不是 `http://your-server:5173`。
 
 ---
 
@@ -495,7 +506,7 @@ pm2 restart all
 ## 支持
 
 如有问题，请查看：
+
 - 日志文件：`logs/` 目录
 - GitHub Issues
 - 项目文档
-

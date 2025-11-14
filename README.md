@@ -73,6 +73,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 **云端进度同步**：
 
 系统支持用户登录后自动将学习进度同步到云端，包括：
+
 - 📊 已掌握单词列表与熟悉度追踪
 - 🎯 个性化复习队列（错误单词智能推荐）
 - 📍 章节学习断点（跨设备无缝续学）
@@ -149,6 +150,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 后端使用 Java Spring Boot + SQLite 提供用户注册、登录和进度同步功能。
 
 **运行后端服务**:
+
 ```sh
 cd backend
 ./gradlew bootRun
