@@ -48,9 +48,10 @@ public class RegistrationService {
             throw new UsernameAlreadyExistsException("Username already exists");
         }
 
-        // Validate email uniqueness if provided
-        if (request.getEmail() != null && !request.getEmail().isEmpty()) {
-            if (userRepository.existsByEmail(request.getEmail())) {
+        // Validate email uniqueness if provided (not null)
+        String email = request.getEmail();
+        if (email != null) {
+            if (userRepository.existsByEmail(email)) {
                 throw new EmailAlreadyExistsException("Email already exists");
             }
         }

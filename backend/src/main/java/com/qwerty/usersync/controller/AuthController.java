@@ -37,6 +37,11 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody RegisterRequest request) {
         try {
+            // Normalize email: convert empty string to null
+            if (request.getEmail() != null) {
+                String trimmedEmail = request.getEmail().trim();
+                request.setEmail(trimmedEmail.isEmpty() ? null : trimmedEmail);
+            }
             AuthResponse response = registrationService.register(request);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
         } catch (IllegalArgumentException e) {

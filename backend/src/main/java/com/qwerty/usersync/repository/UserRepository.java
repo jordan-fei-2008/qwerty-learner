@@ -99,7 +99,8 @@ public class UserRepository {
     }
 
     public boolean existsByEmail(String email) {
-        if (email == null || email.isEmpty()) {
+        // Return false for null or empty email to avoid false positives
+        if (email == null || email.trim().isEmpty()) {
             return false;
         }
         String sql = "SELECT COUNT(*) FROM users WHERE email = ?";
