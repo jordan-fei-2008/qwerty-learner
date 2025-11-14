@@ -6,14 +6,20 @@ import type { FC } from 'react'
 import { useState } from 'react'
 import * as XLSX from 'xlsx'
 
+type WordRecordExport = {
+  word: string
+  dict: string
+  wrongCount: number
+}
+
 type DropdownProps = {
-  renderRecords: any
+  renderRecords: WordRecordExport[]
 }
 
 const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
   const [isExporting, setIsExporting] = useState(false)
 
-  const formatTimestamp = (date: any) => {
+  const formatTimestamp = (date: Date) => {
     const year = date.getFullYear()
     const month = String(date.getMonth() + 1).padStart(2, '0') // 月份从0开始
     const day = String(date.getDate()).padStart(2, '0')
@@ -30,7 +36,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
     try {
       // 获取所有需要的词典数据
       const dictUrls: string[] = []
-      renderRecords.forEach((item: any) => {
+      renderRecords.forEach((item) => {
         const dictInfo = idDictionaryMap[item.dict]
         if (dictInfo?.url && !dictUrls.includes(dictInfo.url)) {
           dictUrls.push(dictInfo.url)
@@ -38,7 +44,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       })
 
       // 并行获取所有词典数据
-      const dictDataPromises = dictUrls.map(async (url) => {
+      const dictDataPromises = dictUrls.map(async (url): Promise<{ url: string; data: Array<{ name: string; trans: string[] }> }> => {
         try {
           const data = await wordListFetcher(url)
           return { url, data }
@@ -53,16 +59,14 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
 
       const ExportData: Array<{ 单词: string; 释义: string; 错误次数: number; 词典: string }> = []
 
-      renderRecords.forEach((item: any) => {
+      renderRecords.forEach((item) => {
         const dictInfo = idDictionaryMap[item.dict]
         let translation = ''
-
         if (dictInfo?.url && dictDataMap.has(dictInfo.url)) {
-          const wordList = dictDataMap.get(dictInfo.url) || []
-          const word = wordList.find((w: any) => w.name === item.word)
+          const wordList = dictDataMap.get(dictInfo.url) as Array<{ name: string; trans: string[] }>
+          const word = wordList.find((w) => w.name === item.word)
           translation = word ? word.trans.join('；') : ''
         }
-
         ExportData.push({
           单词: item.word,
           释义: translation,
@@ -74,7 +78,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       let blob: Blob
 
       if (bookType === 'txt') {
-        const content = ExportData.map((item: any) => `${item.单词}: ${item.释义}`).join('\n')
+        const content = ExportData.map((item) => `${item.单词}: ${item.释义}`).join('\n')
         blob = new Blob([content], { type: 'text/plain' })
       } else {
         const worksheet = XLSX.utils.json_to_sheet(ExportData)

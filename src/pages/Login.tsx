@@ -4,6 +4,7 @@ import { login } from '@/services/user/login'
 import { hasOfflineOperations } from '@/services/user/progressSync'
 import { progressAtom } from '@/state/progressAtoms'
 import { setAuthDataAtom } from '@/store/authSlice'
+import type { UserProgress } from '@/typings/progress'
 import type { LoginRequest } from '@/typings/userProgress'
 import { useSetAtom } from 'jotai'
 import { KeyRound, LogIn, User } from 'lucide-react'
@@ -24,7 +25,12 @@ export default function Login() {
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showWarning, setShowWarning] = useState(false)
-  const [pendingLoginData, setPendingLoginData] = useState<any>(null)
+  type LoginResponse = {
+    token: string
+    user: { username: string }
+    progress: UserProgress
+  }
+  const [pendingLoginData, setPendingLoginData] = useState<LoginResponse | null>(null)
 
   const handleChange = (field: keyof LoginRequest) => (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData((prev) => ({ ...prev, [field]: e.target.value }))
@@ -53,7 +59,7 @@ export default function Login() {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     if (!validateForm()) {
@@ -66,22 +72,45 @@ export default function Login() {
     try {
       const response = await login(formData)
 
+      // Normalize lastLearnedDate for compatibility
+      const normalizedResponse: LoginResponse = {
+        ...response,
+        progress: {
+          ...response.progress,
+          stats: {
+            ...response.progress.stats,
+            lastLearnedDate: response.progress.stats.lastLearnedDate === undefined ? null : response.progress.stats.lastLearnedDate,
+          },
+          sessionPointer: response.progress.sessionPointer
+            ? {
+                wordsetId: response.progress.sessionPointer.wordsetId || response.progress.sessionPointer.wordset || '',
+                nextIndex: response.progress.sessionPointer.nextIndex,
+              }
+            : null,
+        },
+      }
+
       // Check if there are offline operations before logging in
       if (hasOfflineOperations()) {
         // Show warning and store response
-        setPendingLoginData(response)
+        setPendingLoginData(normalizedResponse)
         setShowWarning(true)
         setIsSubmitting(false)
         return
       }
 
       // No offline data, proceed with login
-      await proceedWithLogin(response)
-    } catch (error: any) {
-      const message = error.message || '登录失败，请重试'
-
+      await proceedWithLogin(normalizedResponse)
+    } catch (error: unknown) {
+      let message = '登录失败，请重试'
+      let status: number | undefined
+      if (error instanceof Error) {
+        message = error.message || message
+        // @ts-expect-error: custom error shape from backend
+        status = error.status
+      }
       // Handle authentication errors
-      if (error.status === 401 || message.includes('Invalid username or password')) {
+      if (status === 401 || message.includes('Invalid username or password')) {
         setErrors({ general: '用户名或密码错误' })
       } else {
         setErrors({ general: message })
@@ -90,7 +119,7 @@ export default function Login() {
     }
   }
 
-  const proceedWithLogin = async (response: any) => {
+  const proceedWithLogin = async (response: LoginResponse) => {
     try {
       // Update atoms first (atomWithStorage will automatically sync to localStorage)
       setAuthData({
@@ -106,7 +135,7 @@ export default function Login() {
       await new Promise((resolve) => setTimeout(resolve, 100))
 
       // Navigate back to the page user was trying to access, or to main page
-      const from = (location.state as any)?.from?.pathname || '/'
+      const from = (location.state as { from?: { pathname?: string } })?.from?.pathname || '/'
       navigate(from, { replace: true })
     } catch (error) {
       console.error('[Login] Error in proceedWithLogin:', error)

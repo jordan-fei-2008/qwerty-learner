@@ -71,7 +71,7 @@ export function ErrorBook() {
 
         if (cloudRecords && cloudRecords.length > 0) {
           console.log('[ErrorBook] Loaded', cloudRecords.length, 'records from cloud')
-          processRecords(cloudRecords)
+          processRecords(cloudRecords as Array<{ word: string; dict: string; wrongCount: number }>)
           return
         }
 
@@ -80,16 +80,16 @@ export function ErrorBook() {
         const localRecords = await db.wordRecords.where('wrongCount').above(0).toArray()
 
         console.log('[ErrorBook] Loaded', localRecords.length, 'records from IndexedDB')
-        processRecords(localRecords)
+        processRecords(localRecords as Array<{ word: string; dict: string; wrongCount: number }>)
       } catch (error) {
         console.error('[ErrorBook] Failed to load from cloud, using IndexedDB:', error)
         // Fallback to IndexedDB on error
         const localRecords = await db.wordRecords.where('wrongCount').above(0).toArray()
-        processRecords(localRecords)
+        processRecords(localRecords as Array<{ word: string; dict: string; wrongCount: number }>)
       }
     }
 
-    const processRecords = (records: any[]) => {
+    const processRecords = (records: Array<{ word: string; dict: string; wrongCount: number }>) => {
       const groups: groupedWordRecords[] = []
 
       records.forEach((record) => {

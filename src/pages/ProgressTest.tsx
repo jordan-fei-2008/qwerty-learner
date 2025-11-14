@@ -2,7 +2,6 @@ import { SyncNowButton } from '@/components/SyncNowButton'
 import { Button } from '@/components/ui/button'
 import { useProgressSync } from '@/hooks/useProgressSync'
 import { authStateAtom, progressAtom } from '@/store/authSlice'
-import type { UserProgress } from '@/typings/userProgress'
 import { useAtom } from 'jotai'
 import { useState } from 'react'
 
@@ -13,9 +12,9 @@ export default function ProgressTestPage() {
   const [testWord, setTestWord] = useState('')
 
   const handleAddMasteredWord = () => {
-    if (!testWord.trim()) return
+    if (!testWord.trim() || !progress) return
 
-    const updatedProgress: UserProgress = {
+    const updatedProgress = {
       ...progress,
       masteredWords: [...progress.masteredWords, testWord.trim()],
       stats: {
@@ -25,25 +24,20 @@ export default function ProgressTestPage() {
       },
     }
 
-    // Update local state
     setProgress(updatedProgress)
-
-    // Queue sync to server (will be debounced)
     syncProgress(updatedProgress)
-
-    // Clear input
     setTestWord('')
   }
 
   const handleIncrementStreak = () => {
-    const updatedProgress: UserProgress = {
+    if (!progress) return
+    const updatedProgress = {
       ...progress,
       stats: {
         ...progress.stats,
         streakDays: progress.stats.streakDays + 1,
       },
     }
-
     setProgress(updatedProgress)
     syncProgress(updatedProgress)
   }
@@ -94,15 +88,15 @@ export default function ProgressTestPage() {
         <div className="grid grid-cols-3 gap-4">
           <div>
             <p className="text-sm text-gray-600">已掌握单词</p>
-            <p className="text-2xl font-bold">{progress.masteredWords.length}</p>
+            <p className="text-2xl font-bold">{progress ? progress.masteredWords.length : 0}</p>
           </div>
           <div>
             <p className="text-sm text-gray-600">今日学习</p>
-            <p className="text-2xl font-bold">{progress.stats.todayLearned}</p>
+            <p className="text-2xl font-bold">{progress ? progress.stats.todayLearned : 0}</p>
           </div>
           <div>
             <p className="text-sm text-gray-600">连续打卡天数</p>
-            <p className="text-2xl font-bold">{progress.stats.streakDays}</p>
+            <p className="text-2xl font-bold">{progress ? progress.stats.streakDays : 0}</p>
           </div>
         </div>
       </div>
@@ -133,11 +127,13 @@ export default function ProgressTestPage() {
           增加连续打卡天数 +1
         </Button>
 
-        <p className="mt-4 text-sm text-gray-600">💡 提示：修改后会在 3 秒内自动同步到服务器，或点击右上角"立即同步"按钮</p>
+        <p className="mt-4 text-sm text-gray-600">
+          💡 提示：修改后会在 3 秒内自动同步到服务器，或点击右上角&nbsp;&quot;立即同步&quot;&nbsp;按钮
+        </p>
       </div>
 
       {/* Mastered words list */}
-      {progress.masteredWords.length > 0 && (
+      {progress && progress.masteredWords.length > 0 && (
         <div className="rounded-lg border p-4">
           <h2 className="mb-2 font-semibold">已掌握的单词列表</h2>
           <div className="flex flex-wrap gap-2">

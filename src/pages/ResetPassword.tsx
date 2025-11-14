@@ -36,9 +36,15 @@ export default function ResetPassword() {
       const response = await getSecurityQuestion(username.trim())
       setSecurityQuestion(response.securityQuestion)
       setStep('answer')
-    } catch (error: any) {
-      const message = error.message || '获取安全问题失败'
-      if (error.status === 404 || message.includes('not found')) {
+    } catch (error: unknown) {
+      let message = '获取安全问题失败'
+      let status: number | undefined
+      if (error instanceof Error) {
+        message = error.message || message
+        // @ts-expect-error: custom error shape from backend
+        status = error.status
+      }
+      if (status === 404 || message.includes('not found')) {
         setErrors({ username: '用户不存在' })
       } else {
         setErrors({ general: message })
@@ -85,12 +91,17 @@ export default function ResetPassword() {
       })
 
       setStep('success')
-    } catch (error: any) {
-      const message = error.message || '密码重置失败'
-
-      if (error.status === 401 || message.includes('Incorrect')) {
+    } catch (error: unknown) {
+      let message = '密码重置失败'
+      let status: number | undefined
+      if (error instanceof Error) {
+        message = error.message || message
+        // @ts-expect-error: custom error shape from backend
+        status = error.status
+      }
+      if (status === 401 || message.includes('Incorrect')) {
         setErrors({ securityAnswer: '安全问题答案错误' })
-      } else if (error.status === 404) {
+      } else if (status === 404) {
         setErrors({ general: '用户不存在' })
       } else {
         setErrors({ general: message })

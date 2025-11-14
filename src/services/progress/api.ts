@@ -45,7 +45,7 @@ export async function patchProgress(patch: ProgressPatch): Promise<ProgressRespo
   // Transform frontend ProgressPatch to backend ProgressPatchRequest format
   // Backend expects: addMasteredWords, familiarityUpdates, addReviewQueue, removeReviewQueue
   // Frontend sends: masteredWords, familiarity, reviewQueueAdd, reviewQueueRemove
-  const backendPatch: any = {
+  const backendPatch: Record<string, unknown> = {
     schemaVersion: 1,
   }
 

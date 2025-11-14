@@ -3,16 +3,14 @@ import { prepareReplay } from '@/services/progress/offlineBuffer'
 import {
   type ProgressResponse,
   clearProgressSync,
-  getPendingCount,
   initProgressSync,
-  isSyncing as isSyncingService,
   queueProgressUpdate,
   setSyncCallbacks,
   syncNow as syncNowService,
 } from '@/services/user/progressSync'
 import { progressAtom as newProgressAtom } from '@/state/progressAtoms'
 import { authTokenAtom, isAuthenticatedAtom, lastSyncAtAtom, pendingOpsCountAtom, progressAtom } from '@/store/authSlice'
-import type { UserProgress } from '@/typings/userProgress'
+import type { UserProgress } from '@/typings/progress'
 import { useAtom, useSetAtom } from 'jotai'
 import { useEffect, useState } from 'react'
 
@@ -69,7 +67,22 @@ export function useProgressSync() {
         onSyncSuccess: (response: ProgressResponse) => {
           setIsSyncing(false)
           // Update local progress with server response
-          setProgress(response.progress)
+          // Normalize lastLearnedDate to string|null for compatibility
+          // Normalize lastLearnedDate and sessionPointer for compatibility
+          const normalizedProgress: UserProgress = {
+            ...response.progress,
+            stats: {
+              ...response.progress.stats,
+              lastLearnedDate: response.progress.stats.lastLearnedDate === undefined ? null : response.progress.stats.lastLearnedDate,
+            },
+            sessionPointer: response.progress.sessionPointer
+              ? {
+                  wordsetId: response.progress.sessionPointer.wordsetId || response.progress.sessionPointer.wordset || '',
+                  nextIndex: response.progress.sessionPointer.nextIndex,
+                }
+              : null,
+          }
+          setProgress(normalizedProgress)
           setLastSyncAt(Date.now())
           setPendingCount(0)
         },

@@ -12,7 +12,7 @@ import {
   MASTERY_THRESHOLD,
   REVIEW_QUEUE_MAX,
 } from '@/constants/progress'
-import type { ChapterResult, ProgressPatch, UserProgress, WordOutcome } from '@/typings/progress'
+import type { ChapterResult, ProgressPatch, UserProgress } from '@/typings/progress'
 import { getTodayDateString, isConsecutiveDay } from '@/utils/date'
 
 /**

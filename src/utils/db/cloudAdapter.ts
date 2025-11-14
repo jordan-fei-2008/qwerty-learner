@@ -23,7 +23,7 @@ function getAuthToken(): string | null {
 /**
  * Add word record to cloud storage (replaces IndexedDB)
  */
-export async function addWordRecord(record: any): Promise<number> {
+export async function addWordRecord(record: { word: string; [key: string]: unknown }): Promise<number> {
   const token = getAuthToken()
   if (!token) {
     console.warn('[DBAdapter] No auth token, skipping cloud storage')
@@ -43,7 +43,10 @@ export async function addWordRecord(record: any): Promise<number> {
 /**
  * Get word records by time range (replaces IndexedDB query)
  */
-export async function getWordRecordsByTimeRange(startTime: number, endTime: number): Promise<any[]> {
+export async function getWordRecordsByTimeRange(
+  startTime: number,
+  endTime: number,
+): Promise<Array<{ word: string; wrongCount: number; [key: string]: unknown }>> {
   const token = getAuthToken()
   if (!token) {
     console.warn('[DBAdapter] No auth token, returning empty results')
@@ -51,7 +54,10 @@ export async function getWordRecordsByTimeRange(startTime: number, endTime: numb
   }
 
   try {
-    const records = await http.get<any[]>(`/progress/word-records?startTime=${startTime}&endTime=${endTime}`, { token })
+    const records = await http.get<Array<{ word: string; wrongCount: number; [key: string]: unknown }>>(
+      `/progress/word-records?startTime=${startTime}&endTime=${endTime}`,
+      { token },
+    )
     console.log('[DBAdapter] Retrieved', records.length, 'word records from cloud')
     return records
   } catch (error) {
@@ -63,7 +69,7 @@ export async function getWordRecordsByTimeRange(startTime: number, endTime: numb
 /**
  * Get all word records (replaces IndexedDB.toArray())
  */
-export async function getAllWordRecords(): Promise<any[]> {
+export async function getAllWordRecords(): Promise<Array<{ word: string; wrongCount: number; [key: string]: unknown }>> {
   const token = getAuthToken()
   if (!token) {
     console.warn('[DBAdapter] No auth token, returning empty results')
@@ -71,7 +77,7 @@ export async function getAllWordRecords(): Promise<any[]> {
   }
 
   try {
-    const records = await http.get<any[]>('/progress/word-records', { token })
+    const records = await http.get<Array<{ word: string; wrongCount: number; [key: string]: unknown }>>('/progress/word-records', { token })
     console.log('[DBAdapter] Retrieved', records.length, 'word records from cloud')
     return records
   } catch (error) {
@@ -83,7 +89,7 @@ export async function getAllWordRecords(): Promise<any[]> {
 /**
  * Get error word records (wrongCount > 0) for ErrorBook page
  */
-export async function getErrorWordRecords(): Promise<any[]> {
+export async function getErrorWordRecords(): Promise<Array<{ word: string; wrongCount: number; [key: string]: unknown }>> {
   const token = getAuthToken()
   if (!token) {
     console.warn('[DBAdapter] No auth token, returning empty results')
@@ -91,7 +97,7 @@ export async function getErrorWordRecords(): Promise<any[]> {
   }
 
   try {
-    const records = await http.get<any[]>('/progress/word-records', { token })
+    const records = await http.get<Array<{ word: string; wrongCount: number; [key: string]: unknown }>>('/progress/word-records', { token })
     // Filter records with wrongCount > 0
     const errorRecords = records.filter((record) => record.wrongCount > 0)
     console.log('[DBAdapter] Retrieved', errorRecords.length, 'error word records from cloud')

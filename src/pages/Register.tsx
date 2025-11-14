@@ -75,16 +75,36 @@ export default function Register() {
       const response = await register(formData)
 
       // Save auth data to state (will be persisted by authSlice)
-      setAuthData({
-        token: response.token,
-        username: response.user.username,
-        progress: response.progress,
-      })
+      const normalizedProgress = response.progress
+        ? {
+            ...response.progress,
+            stats: {
+              ...response.progress.stats,
+              lastLearnedDate: response.progress.stats.lastLearnedDate === undefined ? null : response.progress.stats.lastLearnedDate,
+            },
+          }
+        : null
+      if (normalizedProgress) {
+        setAuthData({
+          token: response.token,
+          username: response.user.username,
+          progress: normalizedProgress,
+        })
+      } else {
+        setAuthData({
+          token: response.token,
+          username: response.user.username,
+          progress: response.progress,
+        })
+      }
 
       // Navigate to main page
       navigate('/')
-    } catch (error: any) {
-      const message = error.message || '注册失败，请重试'
+    } catch (error: unknown) {
+      let message = '注册失败，请重试'
+      if (error instanceof Error) {
+        message = error.message || message
+      }
 
       // Handle specific error cases
       if (message.includes('Username') && message.includes('already exists')) {

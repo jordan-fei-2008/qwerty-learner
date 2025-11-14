@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
 import { useSessionResume } from '@/hooks/useSessionResume'
-import { formatSessionPointer } from '@/services/user/sessionResume'
 
 interface SessionResumePromptProps {
   onResume: (wordset: string, nextIndex: number) => void
