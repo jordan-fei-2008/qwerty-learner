@@ -7,3 +7,100 @@
 2025-11-04T10:02:25.227+08:00  INFO 3834 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@4c447c09
 2025-11-04T10:02:25.228+08:00  INFO 3834 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2025-11-04T10:02:25.432+08:00  INFO 3834 --- [main] com.qwerty.usersync.Application          : Started Application in 1.172 seconds (process running for 1.31)
+2025-11-09T11:59:45.629+08:00  INFO 29760 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.9 with PID 29760 (/Users/huanfeng16/workspace/qwerty-learner/backend/build/classes/java/main started by huanfeng16 in /Users/huanfeng16/workspace/qwerty-learner/backend)
+2025-11-09T11:59:45.630+08:00  INFO 29760 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T11:59:45.901+08:00  INFO 29760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T11:59:45.902+08:00  INFO 29760 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-09T11:59:45.915+08:00  INFO 29760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T11:59:45.942+08:00  INFO 29760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T11:59:46.288+08:00  INFO 29760 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39909d1a
+2025-11-09T11:59:46.289+08:00  INFO 29760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T11:59:46.432+08:00  INFO 29760 --- [main] com.qwerty.usersync.Application          : Started Application in 0.927 seconds (process running for 1.016)
+2025-11-09T12:01:02.764+08:00  INFO 29760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-09T12:01:02.767+08:00  INFO 29760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T12:24:42.978+08:00  INFO 31400 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.9 with PID 31400 (/Users/huanfeng16/workspace/qwerty-learner/backend/build/classes/java/main started by huanfeng16 in /Users/huanfeng16/workspace/qwerty-learner/backend)
+2025-11-09T12:24:42.979+08:00  INFO 31400 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T12:24:43.238+08:00  INFO 31400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T12:24:43.238+08:00  INFO 31400 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-09T12:24:43.252+08:00  INFO 31400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T12:24:43.277+08:00  INFO 31400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T12:24:43.956+08:00  INFO 31400 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39909d1a
+2025-11-09T12:24:43.957+08:00  INFO 31400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T12:24:44.103+08:00  INFO 31400 --- [main] com.qwerty.usersync.Application          : Started Application in 1.242 seconds (process running for 1.33)
+2025-11-09T12:26:52.082+08:00  INFO 31400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-09T12:26:52.082+08:00  INFO 31400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-09T12:26:52.083+08:00  INFO 31400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-09T13:06:19.818+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s353ms).
+2025-11-09T13:23:35.113+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s295ms).
+2025-11-09T13:40:18.055+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s929ms).
+2025-11-09T13:56:44.376+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s321ms).
+2025-11-09T14:13:47.359+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m32s972ms).
+2025-11-09T14:30:59.798+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m42s432ms).
+2025-11-09T14:47:22.729+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m52s918ms).
+2025-11-09T15:03:28.679+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m5s950ms).
+2025-11-09T15:21:02.644+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m3s964ms).
+2025-11-09T15:36:40.584+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s939ms).
+2025-11-09T15:53:10.573+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m15ms).
+2025-11-09T16:09:35.649+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s77ms).
+2025-11-09T16:15:33.648+08:00  WARN 31400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s991ms).
+2025-11-09T19:57:47.676+08:00  INFO 37117 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.9 with PID 37117 (/Users/huanfeng16/workspace/qwerty-learner/backend/build/classes/java/main started by huanfeng16 in /Users/huanfeng16/workspace/qwerty-learner/backend)
+2025-11-09T19:57:47.676+08:00  INFO 37117 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T19:57:47.946+08:00  INFO 37117 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T19:57:47.946+08:00  INFO 37117 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-09T19:57:47.959+08:00  INFO 37117 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T19:57:47.984+08:00  INFO 37117 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T19:57:48.265+08:00  INFO 37117 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39909d1a
+2025-11-09T19:57:48.267+08:00  INFO 37117 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T19:57:48.411+08:00  WARN 37117 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-09T19:57:48.412+08:00  INFO 37117 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-09T19:57:48.420+08:00  INFO 37117 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T19:57:48.427+08:00 ERROR 37117 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-09T19:58:08.469+08:00  INFO 37152 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.9 with PID 37152 (/Users/huanfeng16/workspace/qwerty-learner/backend/build/classes/java/main started by huanfeng16 in /Users/huanfeng16/workspace/qwerty-learner/backend)
+2025-11-09T19:58:08.469+08:00  INFO 37152 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T19:58:08.730+08:00  INFO 37152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T19:58:08.731+08:00  INFO 37152 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-09T19:58:08.744+08:00  INFO 37152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T19:58:08.768+08:00  INFO 37152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T19:58:08.942+08:00  INFO 37152 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39909d1a
+2025-11-09T19:58:08.942+08:00  INFO 37152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T19:58:09.083+08:00  WARN 37152 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-09T19:58:09.083+08:00  INFO 37152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-09T19:58:09.085+08:00  INFO 37152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T19:58:09.093+08:00 ERROR 37152 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-09T19:58:15.294+08:00  INFO 31400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-09T19:58:15.297+08:00  INFO 31400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T19:58:45.497+08:00  INFO 37216 --- [main] com.qwerty.usersync.Application          : Starting Application using Java 21.0.9 with PID 37216 (/Users/huanfeng16/workspace/qwerty-learner/backend/build/classes/java/main started by huanfeng16 in /Users/huanfeng16/workspace/qwerty-learner/backend)
+2025-11-09T19:58:45.498+08:00  INFO 37216 --- [main] com.qwerty.usersync.Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T19:58:45.766+08:00  INFO 37216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T19:58:45.766+08:00  INFO 37216 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-09T19:58:45.780+08:00  INFO 37216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T19:58:45.804+08:00  INFO 37216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T19:58:46.069+08:00  INFO 37216 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@46383a78
+2025-11-09T19:58:46.070+08:00  INFO 37216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-09T19:58:46.219+08:00  INFO 37216 --- [main] com.qwerty.usersync.Application          : Started Application in 0.841 seconds (process running for 0.928)

@@ -4,6 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qwerty.usersync.dto.AuthResponse;
 import com.qwerty.usersync.dto.RegisterRequest;
+import com.qwerty.usersync.exception.EmailAlreadyExistsException;
+import com.qwerty.usersync.exception.UsernameAlreadyExistsException;
 import com.qwerty.usersync.model.User;
 import com.qwerty.usersync.model.UserProgress;
 import com.qwerty.usersync.progress.DefaultProgress;
@@ -12,6 +14,7 @@ import com.qwerty.usersync.repository.UserRepository;
 import com.qwerty.usersync.security.PasswordUtil;
 import com.qwerty.usersync.security.SecurityAnswerUtil;
 import com.qwerty.usersync.security.TokenUtil;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -42,13 +45,13 @@ public class RegistrationService {
     public AuthResponse register(RegisterRequest request) {
         // Validate username uniqueness
         if (userRepository.existsByUsername(request.getUsername())) {
-            throw new IllegalArgumentException("Username already exists");
+            throw new UsernameAlreadyExistsException("Username already exists");
         }
 
         // Validate email uniqueness if provided
         if (request.getEmail() != null && !request.getEmail().isEmpty()) {
             if (userRepository.existsByEmail(request.getEmail())) {
-                throw new IllegalArgumentException("Email already exists");
+                throw new EmailAlreadyExistsException("Email already exists");
             }
         }
 
@@ -65,7 +68,20 @@ public class RegistrationService {
         user.setSecurityQuestion(request.getSecurityQuestion());
         user.setSecurityAnswerHash(securityAnswerUtil.hash(request.getSecurityAnswer()));
         
-        user = userRepository.save(user);
+        try {
+            user = userRepository.save(user);
+        } catch (DataAccessException e) {
+            if (e.getCause() instanceof org.sqlite.SQLiteException) {
+                String causeMessage = e.getCause().getMessage();
+                if (causeMessage.contains("UNIQUE constraint failed: users.email")) {
+                    throw new EmailAlreadyExistsException("Email already exists");
+                }
+                if (causeMessage.contains("UNIQUE constraint failed: users.username")) {
+                    throw new UsernameAlreadyExistsException("Username already exists");
+                }
+            }
+            throw e;
+        }
 
         // Create default progress
         UserProgress progress = new UserProgress();

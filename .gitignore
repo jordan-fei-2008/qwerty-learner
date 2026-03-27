@@ -44,6 +44,7 @@ backend/data/app.db-*
 backend/*.class
 backend/*.jar
 backend/*.log
+backend/logs/*.log
 backend/.settings/
 backend/.classpath
 backend/.project
